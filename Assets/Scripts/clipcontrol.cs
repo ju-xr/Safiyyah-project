@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class clipcontrol : MonoBehaviour
@@ -16,6 +16,7 @@ public class clipcontrol : MonoBehaviour
 
     // Start is called before the first frame update
     public VideoClip[] videoClips = new VideoClip[10];
+
     public AudioClip[] audioClips = new AudioClip[10];
 
     private VideoPlayer videoPlayer;
