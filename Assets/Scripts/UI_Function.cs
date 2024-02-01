@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ControlONGUI : MonoBehaviour
+public class UI_Function : MonoBehaviour
 {
+
+    public Button yourButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +19,11 @@ public class ControlONGUI : MonoBehaviour
         
     }
 
-    void OnGUI()
-    {
-        GUI.Button(new Rect(0, 0, 70, 30), "A button");
+    public void StartButton() 
+    { 
+        //TODO Feed the parameters into clipcontrol script
+
+
+        // TODO start video
     }
 }
