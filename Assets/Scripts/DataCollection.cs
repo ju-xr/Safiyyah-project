@@ -19,8 +19,11 @@ public class DataCollection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            WriteSettingCSV();
+        }
+    } 
 
     void SettingParameterSaver()
     {
@@ -31,10 +34,12 @@ public class DataCollection : MonoBehaviour
 
     }
 
-    public void WriteCSV()
+    public void WriteSettingCSV()
     {
+        Debug.Log("Write csv file data");
         TextWriter tw = new StreamWriter(filename,false);
         tw.WriteLine("Participant: " + "," + settingData.PartcipantCode);
+        tw.WriteLine("Audio Order: " + "," );
         tw.Close();
 
         tw = new StreamWriter(filename, true);
