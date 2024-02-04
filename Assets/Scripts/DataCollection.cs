@@ -38,7 +38,7 @@ public class DataCollection : MonoBehaviour
     {
         Debug.Log("Write csv file data");
         TextWriter tw = new StreamWriter(filename,false);
-        tw.WriteLine("Participant: " + "," + settingData.PartcipantCode);
+        tw.WriteLine("Participant: " + "," + settingData.PartcipantFolderName);
         tw.WriteLine("Audio Order: " + "," );
         tw.Close();
 

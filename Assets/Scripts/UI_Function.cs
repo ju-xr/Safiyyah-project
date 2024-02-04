@@ -5,67 +5,104 @@ using UnityEngine.UI;
 using TMPro;
 using System.IO;
 using System;
+using Unity.VisualScripting;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
+using UnityEngine.SocialPlatforms;
+using System.Linq;
 
 
 //Data collection
 
+public class AudioOrder
+{
+    public int Order;
+    public AudioClip AudioClips;
+
+    public AudioOrder(int order, AudioClip audioClips)
+    {
+        Order = order;
+        AudioClips = audioClips;
+    }
+}
+
 public class UI_Function : MonoBehaviour
 {
-    public string PartcipantCode = "Empty";
-    public string AudioPath = "C:\\Users\\fangm\\Desktop\\Audios";
-    public string[] audioOrder;
+    public string PartcipantFolderName = "Default";
+    public string AudioPath;
 
-    [SerializeField] private TMP_Text ParcitipantTextBox;
-    [SerializeField] private TMP_Text AudioPathTextBox;
+    [SerializeField] private TMP_InputField ParcitipantInput;
+    [SerializeField] private TMP_Dropdown[] audioDropdown;
+    [SerializeField] private List<List<TMP_Dropdown.OptionData>> optionList = new List<List<TMP_Dropdown.OptionData>>();
+
+    private List<string> fileNamesCSV = new List<string>();
+    public List<AudioClip> audioClips = new List<AudioClip>();
+    public List<int> order = new List<int>();
+
+    public List<AudioOrder> audioOrder = new List<AudioOrder>();
+
+    public TMP_Text audioNames;
 
     //public Button yourButton;
     // Start is called before the first frame update
     void Start()
     {
+        //var audioClip = Resources.LoadAll("Audios", typeof(AudioClip));
 
-        AudioPathTextBox.text = AudioPath;
-
+        //foreach (var t in audioClip)
+        //{
+        //    Debug.Log(t.name);
+        //    audioClips.Add((AudioClip)t);
+        //}
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void StartButton() 
-    {
-        //TODO Record the parameters into clipcontrol script
-        PartcipantCode = ParcitipantTextBox.text;
-        AudioPath = AudioPathTextBox.text;
-        Debug.Log(AudioPath);
-        LoadAudioBtn();
-        // TODO start video
 
     }
+
+
 
     public void LoadAudioBtn()
     {
-        //DirectoryInfo dir = new DirectoryInfo(AudioPathTextBox.text);
-        //FileInfo[] info = dir.GetFiles("*.*");
-        //foreach (FileInfo f in info)
-        //{
-        //   Debug.Log(f.FullName);
-        //}
-        
-
-        DirectoryInfo dir = new DirectoryInfo(AudioPath);
-        //string filePath = Path.GetFullPath(AudioPathTextBox.text);
-
-        foreach (var file in dir.GetFiles("*.wav"))
+        if(PartcipantFolderName != null)
         {
-            Debug.Log(file);
+            PartcipantFolderName = ParcitipantInput.text;
+            AudioPath = Application.dataPath + "/Resources/Audios";
+
+            var audioClip = Resources.LoadAll("Audios/" + PartcipantFolderName, typeof(AudioClip));
+
+            //foreach (var t in audioClip)
+            //{
+            //    Debug.Log(t.name);
+            //    audioClips.Add((AudioClip)t);
+
+            //    audioNames.text += audioClips. + t.name + "\n";
+            //}
+            audioClips.Clear();
+            order.Clear();
+
+            for (int i = 0; i < audioClip.Length; i++)
+            {
+
+                Debug.Log(audioClip[i].name);
+
+                    audioClips.Add((AudioClip)audioClip[i]);
+                    order.Add(i + 1);
+                //audioOrder.Add(new AudioOrder(i + 1, (AudioClip)audioClip[i]));
+
+                audioNames.text += audioClip[i].name + "\n";
+            }
+
         }
 
-        //StreamReader sr = new StreamReader(filePath);
+
     }
 
-
-
-
+    public void ClickRandomBtn()
+    {
+        UnityEngine.Random.Range(0, audioClips.Count-1);
+        audioClips = audioClips.OrderBy(x => UnityEngine.Random.value).ToList();
+    }
 }
