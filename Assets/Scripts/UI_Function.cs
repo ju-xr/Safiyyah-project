@@ -27,12 +27,14 @@ public class AudioOrder
 
 public class UI_Function : MonoBehaviour
 {
-    public string PartcipantFolderName = "Default";
+    public clipcontrol clipcontrol;
+
+    public string AudioFolderName = "Default";
     public string AudioPath;
 
-    [SerializeField] private TMP_InputField ParcitipantInput;
+    [SerializeField] private TMP_InputField AudioFolderName_text;
     [SerializeField] private TMP_Dropdown[] audioDropdown;
-    [SerializeField] private List<List<TMP_Dropdown.OptionData>> optionList = new List<List<TMP_Dropdown.OptionData>>();
+    //[SerializeField] private List<List<TMP_Dropdown.OptionData>> optionList = new List<List<TMP_Dropdown.OptionData>>();
 
     private List<string> fileNamesCSV = new List<string>();
     public List<AudioClip> audioClips = new List<AudioClip>();
@@ -41,6 +43,7 @@ public class UI_Function : MonoBehaviour
     public List<AudioOrder> audioOrder = new List<AudioOrder>();
 
     public TMP_Text audioNames;
+    public Toggle randomOrderToggle;
 
     //public Button yourButton;
     // Start is called before the first frame update
@@ -66,12 +69,15 @@ public class UI_Function : MonoBehaviour
 
     public void LoadAudioBtn()
     {
-        if(PartcipantFolderName != null)
+
+
+        if(AudioFolderName != null)
         {
-            PartcipantFolderName = ParcitipantInput.text;
+            AudioFolderName = AudioFolderName_text.text;
             AudioPath = Application.dataPath + "/Resources/Audios";
 
-            var audioClip = Resources.LoadAll("Audios/" + PartcipantFolderName, typeof(AudioClip));
+            var audioClip = Resources.LoadAll("Audios/" + AudioFolderName, typeof(AudioClip));
+
 
             //foreach (var t in audioClip)
             //{
@@ -82,6 +88,7 @@ public class UI_Function : MonoBehaviour
             //}
             audioClips.Clear();
             order.Clear();
+            audioNames.text = string.Empty;
 
             for (int i = 0; i < audioClip.Length; i++)
             {
@@ -92,17 +99,34 @@ public class UI_Function : MonoBehaviour
                     order.Add(i + 1);
                 //audioOrder.Add(new AudioOrder(i + 1, (AudioClip)audioClip[i]));
 
-                audioNames.text += audioClip[i].name + "\n";
+                //audioNames.text += audioClip[i].name + "\n";
             }
+
+            if (randomOrderToggle.isOn)
+            {
+                Debug.Log(randomOrderToggle.isOn);
+                UnityEngine.Random.Range(0, audioClips.Count - 1);
+                audioClips = audioClips.OrderBy(x => UnityEngine.Random.value).ToList();
+            }
+
+
+
+            for (int i = 0; i < audioClips.Count; i++)
+            {
+                audioNames.text += audioClips[i].name + "\n";
+            }
+
+
 
         }
 
 
+
+
     }
 
-    public void ClickRandomBtn()
+    public void StartExperiment()
     {
-        UnityEngine.Random.Range(0, audioClips.Count-1);
-        audioClips = audioClips.OrderBy(x => UnityEngine.Random.value).ToList();
+        clipcontrol.StartExperiment();
     }
 }
