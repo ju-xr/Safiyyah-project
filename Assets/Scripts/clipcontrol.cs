@@ -92,22 +92,37 @@ public class clipcontrol : MonoBehaviour
         yield return new WaitForSeconds(3);
 
         //if trigger video is over, then next video
-        //if (currentVideoOver)
-        //{
-        //    currentIndex++;
-        //    NextVideo(currentIndex);
-        //    yield return new WaitForSeconds(3);
-        //}
+        if (currentVideoOver)
+        {
+            currentIndex++;
+            NextVideo(currentIndex);
+            yield return new WaitForSeconds(3);
+            currentVideoOver = false;
+        }
 
     }
 
     void NextVideo(int currentIndex)
     {
-            videoPlayer.clip = videoClips[currentIndex];
-            audioSource.clip = UI_Function.audioClips[currentIndex];
-            videoPlayer.Play();
-            audioSource.Play();
-            currentVideoOver = false;
+        
+        switch (currentIndex)
+        {
+            case 4:
+                videoPlayer.clip = videoClips[currentIndex];
+                videoPlayer.Play();
+                break;
+            case 8:
+                videoPlayer.clip = videoClips[currentIndex];
+                videoPlayer.Play();
+                break;
+            default:
+                videoPlayer.clip = videoClips[currentIndex];
+                audioSource.clip = UI_Function.audioClips[currentIndex];
+                videoPlayer.Play();
+                audioSource.Play();
+                break;
+        }
+
     }
 
 
