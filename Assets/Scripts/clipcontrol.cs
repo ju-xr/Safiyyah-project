@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using UnityEngine.Video;
 using System.Linq;
 using System;
+using Unity.VisualScripting;
+using UnityEngine.PlayerLoop;
 
 
 public class clipcontrol : MonoBehaviour
@@ -35,19 +37,22 @@ public class clipcontrol : MonoBehaviour
     private const float restPeriod = 10f; // Rest period of 15 seconds
 
     private bool currentVideoOver = false;
+    public GameObject[] WPgoGroupList = new GameObject[9];
 
     void Start()
     {
         videoPlayer = GetComponent<VideoPlayer>();
         audioSource = GetComponent<AudioSource>();
 
-        //StartCoroutine(PlayVideoSequence());
+        //StartCoroutine(PlayVideoSequence()); 
 
         //Load Video to clips
         VideoFolderName = VideoFolderName_text.text;
         VideoPath = Application.dataPath + "/Resources/Videos";
 
         var videoClip = Resources.LoadAll("Videos/" + VideoFolderName, typeof(VideoClip));
+
+        //videoClip = videoClip.OrderBy(go => int.Parse(go.name.Substring(videoClip.Length))).ToArray();
 
         for (int i = 0; i < videoClip.Length; i++)
         {
@@ -61,16 +66,33 @@ public class clipcontrol : MonoBehaviour
             //audioNames.text += audioClip[i].name + "\n";
         }
 
-        videoPlayer.loopPointReached += CheckOver;
+        UI_Function.videoNames.text = string.Empty;
+        for (int i = 0; i < videoClips.Count; i++)
+        {
+            UI_Function.videoNames.text += videoClips[i].name + "\n";
+        }
+
+        //videoClips = videoClips.OrderBy(go => float.Parse(go.name)).ToList();
+        //videoClips = videoClips.OrderBy(go => int.Parse(go.name.Substring(videoClip.Length))).ToArray();
+        //videoPlayer.loopPointReached += CheckOver;
+    }
+
+    void Update()
+    {
+        VideoCountDown(30);
     }
 
     public void StartExperiment()
     {
-
-        StartCoroutine(PlayVideoSequence(0));
+        currentClipIndex = 0;
+        videoPlayer.clip = videoClips[currentClipIndex];
+        audioSource.clip = UI_Function.audioClips[currentClipIndex];
+        videoPlayer.Play();
+        audioSource.Play();
+        UI_Function.currentAudio.text = UI_Function.audioClips[currentClipIndex].name;
     }
 
-    IEnumerator PlayVideoSequence(int currentIndex)
+    IEnumerator PlayNextVideo()
     {
         //while (true)
         //{
@@ -84,53 +106,67 @@ public class clipcontrol : MonoBehaviour
 
 
         //}
-        videoPlayer.clip = videoClips[currentIndex];
-        audioSource.clip = UI_Function.audioClips[currentIndex];
-        videoPlayer.Play();
-        audioSource.Play();
 
-        yield return new WaitForSeconds(3);
+        currentClipIndex++;
 
-        //if trigger video is over, then next video
-        if (currentVideoOver)
-        {
-            currentIndex++;
-            NextVideo(currentIndex);
-            yield return new WaitForSeconds(3);
-            currentVideoOver = false;
-        }
+        Debug.Log("next video: " + !currentVideoOver);
 
-    }
-
-    void NextVideo(int currentIndex)
-    {
-        
-        switch (currentIndex)
+        switch (currentClipIndex)
         {
             case 4:
-                videoPlayer.clip = videoClips[currentIndex];
+                videoPlayer.clip = videoClips[currentClipIndex];
                 videoPlayer.Play();
                 break;
             case 8:
-                videoPlayer.clip = videoClips[currentIndex];
+                videoPlayer.clip = videoClips[currentClipIndex];
                 videoPlayer.Play();
                 break;
             default:
-                videoPlayer.clip = videoClips[currentIndex];
-                audioSource.clip = UI_Function.audioClips[currentIndex];
+                videoPlayer.clip = videoClips[currentClipIndex];
+                audioSource.clip = UI_Function.audioClips[currentClipIndex];
                 videoPlayer.Play();
                 audioSource.Play();
                 break;
         }
+        UI_Function.currentAudio.text = UI_Function.audioClips[currentClipIndex].name;
+
+        yield return new WaitForSeconds(3);
+        //currentVideoOver = false;
+
+        //if trigger video is over, then next video
 
     }
 
-
-    void CheckOver(VideoPlayer vp)
+    void VideoCountDown(int currentSecond)
     {
-        print("Video Is Over");
-        currentVideoOver = true;
+
+            //print("is playing" + videoPlayer.clockTime);
+            if (videoPlayer.clockTime >= currentSecond)
+            {
+                print("Current time is 30, play the next time");
+                StartCoroutine(PlayNextVideo());
+            }
+
+        
+
     }
+
+    public void CutClip()
+    {
+        currentClipIndex++;
+        videoPlayer.clip = videoClips[currentClipIndex];
+        audioSource.clip = UI_Function.audioClips[currentClipIndex];
+        videoPlayer.Play();
+        audioSource.Play();
+        UI_Function.currentAudio.text = UI_Function.audioClips[currentClipIndex].name;
+    }
+
+
+    //void CheckOver(VideoPlayer vp)
+    //{
+    //    print("Video Is Over");
+    //    //StartCoroutine(PlayNextVideo());
+    //}
 
     //void PlayVideoClip(int index)
     //{
@@ -159,8 +195,4 @@ public class clipcontrol : MonoBehaviour
     //}
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
