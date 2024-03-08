@@ -86,10 +86,10 @@ public class clipcontrol : MonoBehaviour
     {
         currentClipIndex = 0;
         videoPlayer.clip = videoClips[currentClipIndex];
-        audioSource.clip = UI_Function.audioClips[currentClipIndex];
+        audioSource.clip = UI_Function.audioPlayList[currentClipIndex];
         videoPlayer.Play();
         audioSource.Play();
-        UI_Function.currentAudio.text = UI_Function.audioClips[currentClipIndex].name;
+        UI_Function.currentAudio.text = UI_Function.audioPlayList[currentClipIndex].name;
     }
 
     IEnumerator PlayNextVideo()
@@ -123,12 +123,12 @@ public class clipcontrol : MonoBehaviour
                 break;
             default:
                 videoPlayer.clip = videoClips[currentClipIndex];
-                audioSource.clip = UI_Function.audioClips[currentClipIndex];
+                audioSource.clip = UI_Function.audioPlayList[currentClipIndex];
                 videoPlayer.Play();
                 audioSource.Play();
                 break;
         }
-        UI_Function.currentAudio.text = UI_Function.audioClips[currentClipIndex].name;
+        UI_Function.currentAudio.text = UI_Function.audioPlayList[currentClipIndex].name;
 
         yield return new WaitForSeconds(3);
         //currentVideoOver = false;
@@ -155,10 +155,10 @@ public class clipcontrol : MonoBehaviour
     {
         currentClipIndex++;
         videoPlayer.clip = videoClips[currentClipIndex];
-        audioSource.clip = UI_Function.audioClips[currentClipIndex];
+        audioSource.clip = UI_Function.audioPlayList[currentClipIndex];
         videoPlayer.Play();
         audioSource.Play();
-        UI_Function.currentAudio.text = UI_Function.audioClips[currentClipIndex].name;
+        UI_Function.currentAudio.text = UI_Function.audioPlayList[currentClipIndex].name;
     }
 
 
