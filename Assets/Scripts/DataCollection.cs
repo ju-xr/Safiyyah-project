@@ -35,9 +35,6 @@ public class DataCollection : MonoBehaviour
 
     }
 
-
-
-
     public void WriteSettingCSV()
     {
         Debug.Log("Write csv file data");
