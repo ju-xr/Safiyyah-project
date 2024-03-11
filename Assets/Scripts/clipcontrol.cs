@@ -49,7 +49,7 @@ public class clipcontrol : MonoBehaviour
 
         for (int i = 0; i < videoClip.Length; i++)
         {
-            Debug.Log(videoClip[i].name);
+            //Debug.Log(videoClip[i].name);
             videoClips.Add((VideoClip)videoClip[i]);
 
             //audioOrder.Add(new AudioOrder(i + 1, (AudioClip)audioClip[i]));
@@ -87,7 +87,7 @@ public class clipcontrol : MonoBehaviour
         currentVideoIndex++;
 
         MatchVideoToAudio();
-                //UI_Function.currentAudio.text = UI_Function.audioPlayList[currentVideoIndex].name;
+        //UI_Function.currentAudio.text = UI_Function.audioPlayList[currentVideoIndex].name;
 
         yield return new WaitForSeconds(3);
         //currentVideoOver = false;
