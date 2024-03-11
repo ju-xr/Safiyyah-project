@@ -34,12 +34,13 @@ public class clipcontrol : MonoBehaviour
 
     public bool lastVideo = false;
     public GameObject[] WPgoGroupList = new GameObject[9];
+    private int videoLength;
 
     void Start()
     {
         videoPlayer = GetComponent<VideoPlayer>();
         audioSource = GetComponent<AudioSource>();
-
+        videoLength = 3;
         //StartCoroutine(PlayVideoSequence()); 
 
         //Load Video to clips
@@ -64,139 +65,182 @@ public class clipcontrol : MonoBehaviour
 
         //videoClips = videoClips.OrderBy(go => float.Parse(go.name)).ToList();
         //videoClips = videoClips.OrderBy(go => int.Parse(go.name.Substring(videoClip.Length))).ToArray();
-        //videoPlayer.loopPointReached += CheckOver;
+        videoPlayer.loopPointReached += CheckOver;
+    }
+
+    void VideoCountDown(int currentSecond)
+    {
+        Debug.Log(videoPlayer.clockTime);
+        //print("is playing" + videoPlayer.clockTime);
+        if (videoPlayer.clockTime >= currentSecond)
+        {
+            print("Current time is 30, play the next time");
+            StartCoroutine(PlayNextVideo());
+        }
     }
 
     void Update()
     {
-        VideoCountDown(30);
+        VideoCountDown(videoLength);//videoLength
     }
 
     public void StartExperiment()
     {
         currentVideoIndex = 0;
-        videoPlayer.clip = videoClips[currentVideoIndex];
-        audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
-        videoPlayer.Play();
-        audioSource.Play();
-        UI_Function.currentAudio.text = UI_Function.audioPlayList[currentVideoIndex].name;
+        MatchVideoAudio();
+        PlayMatchedVA();
     }
 
     IEnumerator PlayNextVideo()
     {
-        currentVideoIndex++;
+        videoPlayer.Stop();
+        audioSource.Stop();
+        Camera.main.clearFlags = CameraClearFlags.SolidColor;
+        MatchPauseUI(); //current video index
+        yield return new WaitForSeconds(2);
+        Camera.main.clearFlags = CameraClearFlags.Skybox;
+        UI_Function.cameraCanvas.SetActive(false);
 
-        MatchVideoToAudio();
+        currentVideoIndex++;
+        MatchVideoAudio();
+        PlayMatchedVA(); // videoPlayer.Play();
+        yield return new WaitForSeconds(videoLength); //videoLength
         //UI_Function.currentAudio.text = UI_Function.audioPlayList[currentVideoIndex].name;
 
-        yield return new WaitForSeconds(3);
         //currentVideoOver = false;
 
         //if trigger video is over, then next video
 
     }
 
-    void MatchVideoToAudio()
+    void MatchVideoAudio()
     {
         switch (currentVideoIndex)
         {
             case 0:
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
-                audioSource.mute = false;
-                videoPlayer.Play();
-                audioSource.Play();
                 break;
             case 1:
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
-                audioSource.mute = false;
-                videoPlayer.Play();
-                audioSource.Play();
                 break;
             case 2:
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
-                audioSource.mute = false;
-                videoPlayer.Play();
-                audioSource.Play();
                 break;
             case 3:
                 videoPlayer.clip = videoClips[currentVideoIndex];
-                videoPlayer.Play();
-                audioSource.mute = true;
-                //mute video
                 break;
             case 4:
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 1];
-                audioSource.mute = false;
-                videoPlayer.Play();
-                audioSource.Play();
                 break;
             case 5:
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 1];
-                audioSource.mute = false;
-                videoPlayer.Play();
-                audioSource.Play();
                 break;
             case 6:
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 1];
-                audioSource.mute = false;
-                videoPlayer.Play();
-                audioSource.Play();
                 break;
             case 7:
                 videoPlayer.clip = videoClips[currentVideoIndex];
-                videoPlayer.Play();
-                audioSource.mute = true;
                 break;
             case 8:
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 2];
-                audioSource.mute = false;
-                videoPlayer.Play();
-                audioSource.Play();
                 lastVideo = true;
                 break;
             case 9:
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 2];
-                audioSource.mute = false;
+                break;
+        }
+    }
+
+    void PlayMatchedVA()
+    {
+        switch (currentVideoIndex)
+        {
+            case 3:
+                videoPlayer.Play();
+                audioSource.Stop();
+                break;
+            case 7:
+                videoPlayer.Play();
+                audioSource.Stop();
+                break;
+            default:
                 videoPlayer.Play();
                 audioSource.Play();
                 break;
         }
     }
 
-    void VideoCountDown(int currentSecond)
+    void MatchPauseUI()
     {
-            //print("is playing" + videoPlayer.clockTime);
-            if (videoPlayer.clockTime >= currentSecond)
-            {
-                print("Current time is 30, play the next time");
-                StartCoroutine(PlayNextVideo());
-            } 
+        switch (currentVideoIndex)
+        {
+            case 0:
+                UI_Function.cameraCanvas.SetActive(true);
+                UI_Function.pauseUI.text = "video 1-2";
+                break;
+            case 1:
+                UI_Function.cameraCanvas.SetActive(true);
+                UI_Function.pauseUI.text = "video 2-3";
+                break;
+            case 2:
+                UI_Function.cameraCanvas.SetActive(true);
+                UI_Function.pauseUI.text = "video 3-4";
+                break;
+            case 3:
+                UI_Function.cameraCanvas.SetActive(true);
+                UI_Function.pauseUI.text = "video 4-5";
+                break;
+            case 4:
+                UI_Function.cameraCanvas.SetActive(true);
+                UI_Function.pauseUI.text = "video 5-6";
+                break;
+            case 5:
+                UI_Function.cameraCanvas.SetActive(true);
+                UI_Function.pauseUI.text = "video 6-7";
+                break;
+            case 6:
+                UI_Function.cameraCanvas.SetActive(true);
+                UI_Function.pauseUI.text = "video 7-8";
+                break;
+            case 7:
+                UI_Function.cameraCanvas.SetActive(true);
+                UI_Function.pauseUI.text = "video 8-9";
+                break;
+            case 8:
+                UI_Function.cameraCanvas.SetActive(true);
+                UI_Function.pauseUI.text = "video 9-10";
+                break;
+            case 9:
+
+                break;
+        }
     }
+
 
     public void CutClip()
     {
         currentVideoIndex++;
         videoPlayer.clip = videoClips[currentVideoIndex];
 
-        MatchVideoToAudio();
+        MatchVideoAudio();
         //UI_Function.currentAudio.text = videoPlayer.clip.name + " = " + audioSource.clip.name;
 
     }
 
 
-    //void CheckOver(VideoPlayer vp)
-    //{
-    //    print("Video Is Over");
-    //    //StartCoroutine(PlayNextVideo());
-    //}
+    void CheckOver(VideoPlayer vp)
+    {
+        print("Video Is Over");
+        //StartCoroutine(PlayNextVideo());
+    }
 
     //void PlayVideoClip(int index)
     //{

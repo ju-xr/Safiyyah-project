@@ -41,6 +41,8 @@ public class UI_Function : MonoBehaviour
     [Header("Audio and Video External Control")]
     public clipcontrol clipcontrol;
     public TMP_Text currentAudio;
+    public GameObject cameraCanvas;
+    public TMP_Text pauseUI;
 
     [Header("Read Audios")]
     public List<AudioClip> audioPlayList = new List<AudioClip>();
