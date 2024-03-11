@@ -6,7 +6,7 @@ using System;
 
 public class DataCollection : MonoBehaviour
 {
-    public UI_Function settingData;
+    public UI_Function inputData_UI;
 
     string filename = "";
 
@@ -38,7 +38,7 @@ public class DataCollection : MonoBehaviour
     {
         Debug.Log("Write csv file data");
         TextWriter tw = new StreamWriter(filename,false);
-        tw.WriteLine("Participant: " + "," + settingData.AudioFolderName);
+        tw.WriteLine("Participant: " + "," + inputData_UI.AudioFolderName);
         tw.WriteLine("Audio Order: " + "," );
         tw.Close();
 

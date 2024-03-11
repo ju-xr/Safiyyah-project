@@ -58,6 +58,8 @@ public class UI_Function : MonoBehaviour
     [SerializeField] private TMP_Dropdown[] emptyAudioDropdown;
     List<string> m_DropOptions = new List<string>();
 
+    public GameObject nextPanel;
+
     //private List<string> fileNamesCSV = new List<string>();
 
 
@@ -129,46 +131,7 @@ public class UI_Function : MonoBehaviour
                 {
                     dp.ClearOptions();
                     dp.interactable = false;
-                }
-
-                /*
-                switch (i)
-                {
-                    case 0:
-                        audio_OrderOption[i].value = i;
-                        break;
-                    case 1:
-                        audio_OrderOption[i].value = i;
-                        break;
-                    case 2:
-                        audio_OrderOption[i].value = i;
-                        break;
-                    case 3:
-                        audio_OrderOption[i].ClearOptions();
-                        audio_OrderOption[i].interactable = false;
-                        break;
-                    case 4:
-                        audio_OrderOption[i].value = i - 1;
-                        break;
-                    case 5:
-                        audio_OrderOption[i].value = i - 1;
-                        break;
-                    case 6:
-                        audio_OrderOption[i].value = i - 1;
-                        break;
-                    case 7:
-                        audio_OrderOption[i].ClearOptions();
-                        audio_OrderOption[i].interactable = false;
-                        break;
-                    case 8:
-                        audio_OrderOption[i].value = i - 2;
-                        break;
-                    case 9:
-                        audio_OrderOption[i].value = i - 2;
-                        break;
-
-                }
-                */
+                }                
 
                 if (randomOrderToggle.isOn)
                 {
@@ -177,30 +140,14 @@ public class UI_Function : MonoBehaviour
                 }
                 else
                 {
-                    audioDropdown[i].interactable = true;
-
-                    //if (i!=3 || i != 7)
-                    //{
-                    //    audio_OrderOption[i].interactable = true;
-                    //}
-                    //else
-                    //{
-                    //    audio_OrderOption[i].interactable = false;
-                    //}
-
-
+                    audioDropdown[i].interactable = true;              
                 }
                 //audio_OrderOption[i].Select(m_DropOptions[1]);
                 audioDropdown[i].RefreshShownValue();
 
             }
 
-
-
         }
-
-
-
 
     }
 
@@ -208,15 +155,11 @@ public class UI_Function : MonoBehaviour
     {
         if (!randomOrderToggle.isOn)
         {
-            //audioClips[i] = audioClips[i+1];
             //audioClips is the list to play
             Debug.Log("dropdown chagne" + currentDropdown.value);
             //current dropdown button number
             int i = int.Parse(currentDropdown.tag);
-            audioPlayList[i] = backupClips[currentDropdown.value];
-            //loop the current dropdown button number
-            //for (int i = 0; i < audio_OrderOption.Count; i++)
-            //{
+            audioPlayList[i] = backupClips[currentDropdown.value];        
         }
 
 
@@ -237,6 +180,10 @@ public class UI_Function : MonoBehaviour
     public void PressCutClip()
     {
         clipcontrol.CutClip();
+        if(clipcontrol.lastVideo)
+        {
+            nextPanel.SetActive(false);
+        }
     }
 
 }

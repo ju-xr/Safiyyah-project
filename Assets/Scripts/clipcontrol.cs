@@ -14,7 +14,7 @@ public class clipcontrol : MonoBehaviour
 {
     public UI_Function UI_Function;
 
-    //Load Video
+    [Header("Video Control")]
     public string VideoFolderName = "Default";
     public string VideoPath;
     [SerializeField] private TMP_InputField VideoFolderName_text;
@@ -23,20 +23,16 @@ public class clipcontrol : MonoBehaviour
     [SerializeField] private TMP_Text VideoTimeTextBox;
     private const float videoPlayTime = 30f; // Play each video for 60 seconds
 
-
     // Start is called before the first frame update
-    //public VideoClip[] videoClips = new VideoClip[10];
     public List<VideoClip> videoClips = new List<VideoClip>();
-    //public AudioClip[] audioClips = new AudioClip[10];
 
     private VideoPlayer videoPlayer;
     private AudioSource audioSource;
-    private int currentClipIndex = 0;
-    private int maxClipIndex = 9;
+    private int currentVideoIndex = 0;
 
     private const float restPeriod = 10f; // Rest period of 15 seconds
 
-    private bool currentVideoOver = false;
+    public bool lastVideo = false;
     public GameObject[] WPgoGroupList = new GameObject[9];
 
     void Start()
@@ -49,20 +45,14 @@ public class clipcontrol : MonoBehaviour
         //Load Video to clips
         VideoFolderName = VideoFolderName_text.text;
         VideoPath = Application.dataPath + "/Resources/Videos";
-
         var videoClip = Resources.LoadAll("Videos/" + VideoFolderName, typeof(VideoClip));
-
-        //videoClip = videoClip.OrderBy(go => int.Parse(go.name.Substring(videoClip.Length))).ToArray();
 
         for (int i = 0; i < videoClip.Length; i++)
         {
-
             Debug.Log(videoClip[i].name);
-
             videoClips.Add((VideoClip)videoClip[i]);
 
             //audioOrder.Add(new AudioOrder(i + 1, (AudioClip)audioClip[i]));
-
             //audioNames.text += audioClip[i].name + "\n";
         }
 
@@ -84,51 +74,20 @@ public class clipcontrol : MonoBehaviour
 
     public void StartExperiment()
     {
-        currentClipIndex = 0;
-        videoPlayer.clip = videoClips[currentClipIndex];
-        audioSource.clip = UI_Function.audioPlayList[currentClipIndex];
+        currentVideoIndex = 0;
+        videoPlayer.clip = videoClips[currentVideoIndex];
+        audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
         videoPlayer.Play();
         audioSource.Play();
-        UI_Function.currentAudio.text = UI_Function.audioPlayList[currentClipIndex].name;
+        UI_Function.currentAudio.text = UI_Function.audioPlayList[currentVideoIndex].name;
     }
 
     IEnumerator PlayNextVideo()
     {
-        //while (true)
-        //{
-        //    PlayVideoClip(currentClipIndex);
+        currentVideoIndex++;
 
-        //    yield return new WaitForSeconds(videoPlayTime);
-
-        //    StopVideo();
-
-        //    yield return new WaitForSeconds(restPeriod);
-
-
-        //}
-
-        currentClipIndex++;
-
-        Debug.Log("next video: " + !currentVideoOver);
-
-        switch (currentClipIndex)
-        {
-            case 4:
-                videoPlayer.clip = videoClips[currentClipIndex];
-                videoPlayer.Play();
-                break;
-            case 8:
-                videoPlayer.clip = videoClips[currentClipIndex];
-                videoPlayer.Play();
-                break;
-            default:
-                videoPlayer.clip = videoClips[currentClipIndex];
-                audioSource.clip = UI_Function.audioPlayList[currentClipIndex];
-                videoPlayer.Play();
-                audioSource.Play();
-                break;
-        }
-        UI_Function.currentAudio.text = UI_Function.audioPlayList[currentClipIndex].name;
+        MatchVideoToAudio();
+                //UI_Function.currentAudio.text = UI_Function.audioPlayList[currentVideoIndex].name;
 
         yield return new WaitForSeconds(3);
         //currentVideoOver = false;
@@ -137,28 +96,99 @@ public class clipcontrol : MonoBehaviour
 
     }
 
+    void MatchVideoToAudio()
+    {
+        switch (currentVideoIndex)
+        {
+            case 0:
+                videoPlayer.clip = videoClips[currentVideoIndex];
+                audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
+                audioSource.mute = false;
+                videoPlayer.Play();
+                audioSource.Play();
+                break;
+            case 1:
+                videoPlayer.clip = videoClips[currentVideoIndex];
+                audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
+                audioSource.mute = false;
+                videoPlayer.Play();
+                audioSource.Play();
+                break;
+            case 2:
+                videoPlayer.clip = videoClips[currentVideoIndex];
+                audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
+                audioSource.mute = false;
+                videoPlayer.Play();
+                audioSource.Play();
+                break;
+            case 3:
+                videoPlayer.clip = videoClips[currentVideoIndex];
+                videoPlayer.Play();
+                audioSource.mute = true;
+                //mute video
+                break;
+            case 4:
+                videoPlayer.clip = videoClips[currentVideoIndex];
+                audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 1];
+                audioSource.mute = false;
+                videoPlayer.Play();
+                audioSource.Play();
+                break;
+            case 5:
+                videoPlayer.clip = videoClips[currentVideoIndex];
+                audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 1];
+                audioSource.mute = false;
+                videoPlayer.Play();
+                audioSource.Play();
+                break;
+            case 6:
+                videoPlayer.clip = videoClips[currentVideoIndex];
+                audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 1];
+                audioSource.mute = false;
+                videoPlayer.Play();
+                audioSource.Play();
+                break;
+            case 7:
+                videoPlayer.clip = videoClips[currentVideoIndex];
+                videoPlayer.Play();
+                audioSource.mute = true;
+                break;
+            case 8:
+                videoPlayer.clip = videoClips[currentVideoIndex];
+                audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 2];
+                audioSource.mute = false;
+                videoPlayer.Play();
+                audioSource.Play();
+                lastVideo = true;
+                break;
+            case 9:
+                videoPlayer.clip = videoClips[currentVideoIndex];
+                audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 2];
+                audioSource.mute = false;
+                videoPlayer.Play();
+                audioSource.Play();
+                break;
+        }
+    }
+
     void VideoCountDown(int currentSecond)
     {
-
             //print("is playing" + videoPlayer.clockTime);
             if (videoPlayer.clockTime >= currentSecond)
             {
                 print("Current time is 30, play the next time");
                 StartCoroutine(PlayNextVideo());
-            }
-
-        
-
+            } 
     }
 
     public void CutClip()
     {
-        currentClipIndex++;
-        videoPlayer.clip = videoClips[currentClipIndex];
-        audioSource.clip = UI_Function.audioPlayList[currentClipIndex];
-        videoPlayer.Play();
-        audioSource.Play();
-        UI_Function.currentAudio.text = UI_Function.audioPlayList[currentClipIndex].name;
+        currentVideoIndex++;
+        videoPlayer.clip = videoClips[currentVideoIndex];
+
+        MatchVideoToAudio();
+        //UI_Function.currentAudio.text = videoPlayer.clip.name + " = " + audioSource.clip.name;
+
     }
 
 
@@ -184,7 +214,7 @@ public class clipcontrol : MonoBehaviour
     {
         videoPlayer.Stop();
         audioSource.Stop();
-        currentClipIndex = (currentClipIndex + 1) % videoClips.Count;
+        currentVideoIndex = (currentVideoIndex + 1) % videoClips.Count;
     }
 
     //public void PlayNextVideo()
