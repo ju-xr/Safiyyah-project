@@ -25,7 +25,8 @@ public class DataCollection : MonoBehaviour
         }
     } 
 
-    void SettingParameterSaver()
+    //After start experiment
+    void StartDataCollection()
     {
         // Save setting panel data INTO file .csv when start button pressed 
 
@@ -33,6 +34,9 @@ public class DataCollection : MonoBehaviour
 
 
     }
+
+
+
 
     public void WriteSettingCSV()
     {
