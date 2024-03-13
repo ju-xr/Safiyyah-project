@@ -86,7 +86,7 @@ public class DataCollection : MonoBehaviour
         {        
             //Write titles
             tw = new StreamWriter(participantFile, false);
-            tw.WriteLine("Participant: " + "," + participantName);
+            tw.WriteLine("Participant(Audio Folder): " + "," + participantName);
             tw.WriteLine("Video Folder:" + "," + videoGroup);
             tw.WriteLine("Audio Order");
             for (int i = 0; i < UI_Function.audioPlayList.Count; i++)
