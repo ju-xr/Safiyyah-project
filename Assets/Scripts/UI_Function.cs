@@ -43,6 +43,7 @@ public class UI_Function : MonoBehaviour
     public TMP_Text currentAudio;
     public GameObject cameraCanvas;
     public TMP_Text pauseUI;
+    public TMP_Dropdown videoFolder;
 
     [Header("Read Audios")]
     public List<AudioClip> audioPlayList = new List<AudioClip>();
@@ -83,6 +84,7 @@ public class UI_Function : MonoBehaviour
 
         if (AudioFolderName != null)
         {
+
             //Find audio Folder, put into audioClip array
             AudioFolderName = AudioFolderName_text.text;
             AudioPath = Application.dataPath + "/Resources/Audios";
@@ -173,10 +175,7 @@ public class UI_Function : MonoBehaviour
 
         // TODO: Start Record Data
 
-        //for (int i = 0; i < audioPlayList.Count; i++)
-        //{
-        //    audioNames.text += audioPlayList[i].name + "\n";
-        //}
+
     }
 
     public void PressCutClip()

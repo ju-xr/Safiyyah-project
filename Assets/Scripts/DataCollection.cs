@@ -3,56 +3,113 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using System;
+using Unity.VisualScripting;
+using System.Globalization;
+using UnityEngine.PlayerLoop;
 
 public class DataCollection : MonoBehaviour
 {
-    public UI_Function inputData_UI;
+    public UI_Function UI_Function;
+    public clipcontrol clipcontrol;
 
-    string filename = "";
+    string folderpath;
+    bool startCollect;
+
+    string participantFile = "";
+    string participantName;
+
+    public Transform headRotation;
+    TextWriter tw;
 
     // Start is called before the first frame update
     void Start()
     {
-        filename = Application.dataPath + "/test.csv";
+        //filename = Application.dataPath + "/" + "ParticipantData" + "/" + UI_Function.AudioFolderName + ".csv";
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(Input.GetKeyUp(KeyCode.Space))
         {
-            WriteSettingCSV();
+            WriteParcipantCSV(); // in clipcontrol too
         }
+
+        WriteUpdateData();
     } 
 
     //After start experiment
-    void StartDataCollection()
+    public void StartDataCollection()
     {
+        
+        if (UI_Function.AudioFolderName == null)
+        {
+            participantName = "Default";
+        }
+        else
+        {
+            participantName = UI_Function.AudioFolderName;
+
+        }
         // Save setting panel data INTO file .csv when start button pressed 
+        folderpath = Application.dataPath + "/" + "ParticipantData" + "/" + participantName;
+        Directory.CreateDirectory(folderpath); // returns a DirectoryInfo object
 
-        //partcipant code, audio order, 
-
+        WriteParcipantCSV();
 
     }
 
-    public void WriteSettingCSV()
+
+    void WriteParcipantCSV()
     {
-        Debug.Log("Write csv file data");
-        TextWriter tw = new StreamWriter(filename,false);
-        tw.WriteLine("Participant: " + "," + inputData_UI.AudioFolderName);
-        tw.WriteLine("Audio Order: " + "," );
-        tw.Close();
-
-        tw = new StreamWriter(filename, true);
-
-        //write data
-
-        tw.Close ();
 
 
+        //participantFile = folderpath + "/" + DateTime.UtcNow.ToString("dd-MM-yyyy_hh-mm-ss") + ".csv";
+        participantFile = folderpath + "/" + participantName + "_" + DateTime.UtcNow.ToString("yyyy-MM-dd") + ".csv";
 
+        Debug.Log("Write _Data csv file data " + participantFile);
+
+        if (!Directory.Exists(participantFile))
+        {        
+            //Write titles
+            tw = new StreamWriter(participantFile, false);
+            tw.WriteLine("Participant: " + "," + participantName);
+            tw.WriteLine("Video Folder:" + clipcontrol.VideoFolderName);
+            tw.WriteLine("Audio Order");
+            for (int i = 0; i < UI_Function.audioPlayList.Count; i++)
+            {
+                //UI_Function.audioNames.text += UI_Function.audioPlayList[i].name + "\n";
+                tw.WriteLine(UI_Function.audioPlayList[i].name + ",");
+            }
+            tw.WriteLine("Time" + "," + "Millisecond" + "," + "VideoClip" + "," + "AudioClip" + "," + "Headrotatin X" + "," + "Headrotatin Y" + "," + "Headrotatin Y" + "," + "GazeObject");
+
+            tw.Close(); 
+
+            tw = new StreamWriter(participantFile, true);
+
+            startCollect = true;
+            //write data
+
+            
+        }
     }
 
+    void WriteUpdateData()
+    {
+        if (startCollect)
+        {
+            //string timestamp = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff",
+                                           
+            tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," + DateTime.UtcNow.Millisecond.ToString()+ "," + headRotation.rotation.x + "," + headRotation.rotation.y + "," + headRotation.rotation.z);
 
+        }
+    }
+
+    void OnApplicationQuit()
+    {
+        Debug.Log("colse writer");
+        startCollect = false;
+        tw.Close();
+    }
 
 }

@@ -13,13 +13,13 @@ using UnityEngine.PlayerLoop;
 public class clipcontrol : MonoBehaviour
 {
     public UI_Function UI_Function;
+    public DataCollection dataCollection;
 
     [Header("Video Control")]
     public string VideoFolderName = "Default";
     public string VideoPath;
     [SerializeField] private TMP_InputField VideoFolderName_text;
-
-    //Video Play Control
+    public int videoLength;
     [SerializeField] private TMP_Text VideoTimeTextBox;
     private const float videoPlayTime = 30f; // Play each video for 60 seconds
 
@@ -34,7 +34,7 @@ public class clipcontrol : MonoBehaviour
 
     public bool lastVideo = false;
     public GameObject[] WPgoGroupList = new GameObject[9];
-    private int videoLength;
+
 
     void Start()
     {
@@ -70,7 +70,7 @@ public class clipcontrol : MonoBehaviour
 
     void VideoCountDown(int currentSecond)
     {
-        Debug.Log(videoPlayer.clockTime);
+        //Debug.Log(videoPlayer.clockTime);
         //print("is playing" + videoPlayer.clockTime);
         if (videoPlayer.clockTime >= currentSecond)
         {
@@ -86,6 +86,7 @@ public class clipcontrol : MonoBehaviour
 
     public void StartExperiment()
     {
+        dataCollection.StartDataCollection();
         currentVideoIndex = 0;
         MatchVideoAudio();
         PlayMatchedVA();
