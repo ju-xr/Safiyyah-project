@@ -26,7 +26,7 @@ public class clipcontrol : MonoBehaviour
     // Start is called before the first frame update
     public List<VideoClip> videoClips = new List<VideoClip>();
 
-    private VideoPlayer videoPlayer;
+    public VideoPlayer videoPlayer;
     private AudioSource audioSource;
     private int currentVideoIndex = 0;
 

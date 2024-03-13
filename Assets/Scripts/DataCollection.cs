@@ -6,6 +6,7 @@ using System;
 using Unity.VisualScripting;
 using System.Globalization;
 using UnityEngine.PlayerLoop;
+using UnityEngine.Video;
 
 public class DataCollection : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class DataCollection : MonoBehaviour
 
     string participantFile = "";
     string participantName;
+    string videoGroup;
+
+    public VideoPlayer videoPlayer;
+    public AudioSource audioSource;
 
     public Transform headRotation;
     TextWriter tw;
@@ -42,13 +47,23 @@ public class DataCollection : MonoBehaviour
     public void StartDataCollection()
     {
         
-        if (UI_Function.AudioFolderName == null)
+        if (UI_Function.AudioFolderName == string.Empty)
         {
             participantName = "Default";
         }
         else
         {
             participantName = UI_Function.AudioFolderName;
+
+        }
+
+        if (clipcontrol.VideoFolderName == string.Empty)
+        {
+            videoGroup = "Default";
+        }
+        else
+        {
+            videoGroup = clipcontrol.VideoFolderName;
 
         }
         // Save setting panel data INTO file .csv when start button pressed 
@@ -62,8 +77,6 @@ public class DataCollection : MonoBehaviour
 
     void WriteParcipantCSV()
     {
-
-
         //participantFile = folderpath + "/" + DateTime.UtcNow.ToString("dd-MM-yyyy_hh-mm-ss") + ".csv";
         participantFile = folderpath + "/" + participantName + "_" + DateTime.UtcNow.ToString("yyyy-MM-dd") + ".csv";
 
@@ -74,7 +87,7 @@ public class DataCollection : MonoBehaviour
             //Write titles
             tw = new StreamWriter(participantFile, false);
             tw.WriteLine("Participant: " + "," + participantName);
-            tw.WriteLine("Video Folder:" + clipcontrol.VideoFolderName);
+            tw.WriteLine("Video Folder:" + "," + videoGroup);
             tw.WriteLine("Audio Order");
             for (int i = 0; i < UI_Function.audioPlayList.Count; i++)
             {
@@ -100,7 +113,7 @@ public class DataCollection : MonoBehaviour
         {
             //string timestamp = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff",
                                            
-            tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," + DateTime.UtcNow.Millisecond.ToString()+ "," + headRotation.rotation.x + "," + headRotation.rotation.y + "," + headRotation.rotation.z);
+            tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," + DateTime.UtcNow.Millisecond.ToString() + "," + videoPlayer.clip.name + ","+ audioSource.clip.name + "," + headRotation.rotation.x + "," + headRotation.rotation.y + "," + headRotation.rotation.z);
 
         }
     }

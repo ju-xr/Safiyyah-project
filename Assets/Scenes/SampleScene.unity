@@ -8529,6 +8529,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI_Function: {fileID: 1015996822}
   clipcontrol: {fileID: 1726885758}
+  videoPlayer: {fileID: 1726885756}
+  audioSource: {fileID: 1726885759}
   headRotation: {fileID: 1385857381}
 --- !u!4 &814545711
 Transform:
@@ -15286,6 +15288,7 @@ MonoBehaviour:
   videoLength: 0
   VideoTimeTextBox: {fileID: 258745960}
   videoClips: []
+  videoPlayer: {fileID: 0}
   lastVideo: 0
   WPgoGroupList:
   - {fileID: 0}
