@@ -72,7 +72,7 @@ public class clipcontrol : MonoBehaviour
     {
         //Debug.Log(videoPlayer.clockTime);
         //print("is playing" + videoPlayer.clockTime);
-        if (videoPlayer.clockTime >= currentSecond)
+        if (videoPlayer.clockTime >= currentSecond && currentVideoIndex<=9)
         {
             print("Current time is 30, play the next time");
             StartCoroutine(PlayNextVideo());
