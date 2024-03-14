@@ -96,6 +96,8 @@ public class clipcontrol : MonoBehaviour
     {
         videoPlayer.Stop();
         audioSource.Stop();
+        videoPlayer.clip = null;
+        audioSource.clip = null;
         Camera.main.clearFlags = CameraClearFlags.SolidColor;
         MatchPauseUI(); //current video index
         yield return new WaitForSeconds(2);
@@ -185,7 +187,8 @@ public class clipcontrol : MonoBehaviour
         {
             case 0:
                 UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = "video 1-2";
+                UI_Function.pauseUI.text = UI_Function.newyorkUI[2];
+                    //"video 1-2";
                 break;
             case 1:
                 UI_Function.cameraCanvas.SetActive(true);
@@ -220,7 +223,8 @@ public class clipcontrol : MonoBehaviour
                 UI_Function.pauseUI.text = "video 9-10";
                 break;
             case 9:
-
+                UI_Function.cameraCanvas.SetActive(true);
+                UI_Function.pauseUI.text = "video 10-";
                 break;
         }
     }

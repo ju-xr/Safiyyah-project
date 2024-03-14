@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EyeGaze : MonoBehaviour
 {
+
+    public float range = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,7 @@ public class EyeGaze : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+
     }
 }

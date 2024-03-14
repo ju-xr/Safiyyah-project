@@ -63,6 +63,10 @@ public class UI_Function : MonoBehaviour
 
     public GameObject nextPanel;
 
+    [Header("Pause UI")]
+    public string[] amsterdamUI;
+    public string[] newyorkUI;
+
     //private List<string> fileNamesCSV = new List<string>();
 
 

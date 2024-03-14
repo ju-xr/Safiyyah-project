@@ -7,6 +7,7 @@ using Unity.VisualScripting;
 using System.Globalization;
 using UnityEngine.PlayerLoop;
 using UnityEngine.Video;
+using UnityEngine.SocialPlatforms;
 
 public class DataCollection : MonoBehaviour
 {
@@ -25,6 +26,9 @@ public class DataCollection : MonoBehaviour
 
     public Transform headRotation;
     TextWriter tw;
+
+    float range = 100;
+    string gazeTag;
 
     // Start is called before the first frame update
     void Start()
@@ -112,9 +116,39 @@ public class DataCollection : MonoBehaviour
         if (startCollect)
         {
             //string timestamp = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff",
-                                           
-            tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," + DateTime.UtcNow.Millisecond.ToString() + "," + videoPlayer.clip.name + ","+ audioSource.clip.name + "," + headRotation.rotation.x + "," + headRotation.rotation.y + "," + headRotation.rotation.z);
 
+            GazeRay();
+
+            //tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," + DateTime.UtcNow.Millisecond.ToString() + "," + videoPlayer.clip.name + "," + audioSource.clip.name + "," + headRotation.rotation.x + "," + headRotation.rotation.y + "," + headRotation.rotation.z + "," + gazeTag);
+
+
+            if (videoPlayer.clip == null || audioSource.clip == null)
+            {
+                tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," + DateTime.UtcNow.Millisecond.ToString() + "," + "Not play video" + "," + "Not play audio" + "," + headRotation.rotation.x + "," + headRotation.rotation.y + "," + headRotation.rotation.z + "," + gazeTag);
+            }
+            else
+            {
+                tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," + DateTime.UtcNow.Millisecond.ToString() + "," + videoPlayer.clip.name + "," + audioSource.clip.name + "," + headRotation.rotation.x + "," + headRotation.rotation.y + "," + headRotation.rotation.z + "," + gazeTag);
+
+            }
+
+        }
+    }
+
+
+     void GazeRay()
+    {
+        Vector3 direction = Vector3.forward;
+        Ray gaze = new Ray(Camera.main.transform.position, Camera.main.transform.TransformDirection(direction * range));
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.TransformDirection(direction * range));
+
+        if (Physics.Raycast(gaze, out RaycastHit hit, range))
+        {
+            gazeTag = hit.collider.tag;
+        }
+        else
+        {
+            gazeTag = "Not Look At";
         }
     }
 
