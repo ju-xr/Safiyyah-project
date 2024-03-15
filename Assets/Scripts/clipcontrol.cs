@@ -157,9 +157,9 @@ public class clipcontrol : MonoBehaviour
 
     void MatchVideoAudio()
     {
-        foreach ()
+        foreach (GameObject go in colliderTags)
         {
-            if (currentVideoIndex >= videoLength)
+            go.SetActive(false);
         }
 
 
@@ -168,6 +168,7 @@ public class clipcontrol : MonoBehaviour
             case 0:
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
+                colliderTags[0].SetActive(true);
                 break;
             case 1:
                 videoPlayer.clip = videoClips[currentVideoIndex];
