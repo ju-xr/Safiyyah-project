@@ -5658,7 +5658,7 @@ Canvas:
   m_GameObject: {fileID: 517341470}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1385857384}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -16493,7 +16493,7 @@ MonoBehaviour:
   VideoFolderName: Default
   VideoPath: 
   VideoFolderName_text: {fileID: 393780675}
-  videoLength: 0
+  videoLength: 10
   VideoTimeTextBox: {fileID: 258745960}
   videoClips: []
   videoPlayer: {fileID: 0}
