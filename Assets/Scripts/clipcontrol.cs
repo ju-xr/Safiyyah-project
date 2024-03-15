@@ -72,10 +72,16 @@ public class clipcontrol : MonoBehaviour
     {
         //Debug.Log(videoPlayer.clockTime);
         //print("is playing" + videoPlayer.clockTime);
-        if (videoPlayer.clockTime >= currentSecond && currentVideoIndex<=9)
+        if (videoPlayer.clockTime >= currentSecond && currentVideoIndex<9)
         {
             print("Current time is 30, play the next time");
             StartCoroutine(PlayNextVideo());
+        }
+
+        if (videoPlayer.clockTime >= currentSecond && currentVideoIndex == 9)
+        {
+            print("The last video played");
+            StartCoroutine(StopLastVideo());
         }
     }
 
@@ -86,10 +92,27 @@ public class clipcontrol : MonoBehaviour
 
     public void StartExperiment()
     {
+        StartCoroutine(PlayFirstVideo());
+    }
+
+    IEnumerator PlayFirstVideo()
+    {
+        Camera.main.clearFlags = CameraClearFlags.SolidColor;
+        UI_Function.cameraCanvas.SetActive(true);
+
+        UI_Function.pauseUI.text = UI_Function.amsterdam_UI[0].Text;
+        yield return new WaitForSeconds(UI_Function.amsterdam_UI[0].Time);
+        UI_Function.pauseUI.text = UI_Function.amsterdam_UI[1].Text;
+        yield return new WaitForSeconds(UI_Function.amsterdam_UI[1].Time);
+
+        Camera.main.clearFlags = CameraClearFlags.Skybox;
+        UI_Function.cameraCanvas.SetActive(false);
+
         dataCollection.StartDataCollection();
         currentVideoIndex = 0;
         MatchVideoAudio();
         PlayMatchedVA();
+
     }
 
     IEnumerator PlayNextVideo()
@@ -100,7 +123,7 @@ public class clipcontrol : MonoBehaviour
         audioSource.clip = null;
         Camera.main.clearFlags = CameraClearFlags.SolidColor;
         MatchPauseUI(); //current video index
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex + 2].Time);
         Camera.main.clearFlags = CameraClearFlags.Skybox;
         UI_Function.cameraCanvas.SetActive(false);
 
@@ -113,6 +136,21 @@ public class clipcontrol : MonoBehaviour
         //currentVideoOver = false;
 
         //if trigger video is over, then next video
+
+    }
+
+    IEnumerator StopLastVideo()
+    {
+        videoPlayer.Stop();
+        audioSource.Stop();
+        videoPlayer.clip = null;
+        audioSource.clip = null;
+        Camera.main.clearFlags = CameraClearFlags.SolidColor;
+        MatchPauseUI(); //current video index
+        yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex +2].Time);
+        UI_Function.pauseUI.text = UI_Function.amsterdam_UI[currentVideoIndex + 3].Text;
+        yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex + 3].Time);
+        Application.Quit();
 
     }
 
@@ -174,6 +212,11 @@ public class clipcontrol : MonoBehaviour
                 videoPlayer.Play();
                 audioSource.Stop();
                 break;
+            case 9:
+                videoPlayer.Play();
+                audioSource.Play();
+
+                break;
             default:
                 videoPlayer.Play();
                 audioSource.Play();
@@ -183,50 +226,53 @@ public class clipcontrol : MonoBehaviour
 
     void MatchPauseUI()
     {
-        switch (currentVideoIndex)
-        {
-            case 0:
-                UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = UI_Function.newyorkUI[2];
-                    //"video 1-2";
-                break;
-            case 1:
-                UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = "video 2-3";
-                break;
-            case 2:
-                UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = "video 3-4";
-                break;
-            case 3:
-                UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = "video 4-5";
-                break;
-            case 4:
-                UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = "video 5-6";
-                break;
-            case 5:
-                UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = "video 6-7";
-                break;
-            case 6:
-                UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = "video 7-8";
-                break;
-            case 7:
-                UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = "video 8-9";
-                break;
-            case 8:
-                UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = "video 9-10";
-                break;
-            case 9:
-                UI_Function.cameraCanvas.SetActive(true);
-                UI_Function.pauseUI.text = "video 10-";
-                break;
-        }
+        UI_Function.cameraCanvas.SetActive(true);
+        UI_Function.pauseUI.text = UI_Function.newyorkUI[currentVideoIndex + 2];
+
+        //switch (currentVideoIndex)
+        //{
+        //    case 0:
+        //        UI_Function.cameraCanvas.SetActive(true);
+        //        UI_Function.pauseUI.text = UI_Function.newyorkUI[currentVideoIndex+2];
+        //            //"video 1-2";
+        //        break;
+        //    case 1:
+        //        UI_Function.cameraCanvas.SetActive(true);
+        //        UI_Function.pauseUI.text = "video 2-3";
+        //        break;
+        //    case 2:
+        //        UI_Function.cameraCanvas.SetActive(true);
+        //        UI_Function.pauseUI.text = "video 3-4";
+        //        break;
+        //    case 3:
+        //        UI_Function.cameraCanvas.SetActive(true);
+        //        UI_Function.pauseUI.text = "video 4-5";
+        //        break;
+        //    case 4:
+        //        UI_Function.cameraCanvas.SetActive(true);
+        //        UI_Function.pauseUI.text = "video 5-6";
+        //        break;
+        //    case 5:
+        //        UI_Function.cameraCanvas.SetActive(true);
+        //        UI_Function.pauseUI.text = "video 6-7";
+        //        break;
+        //    case 6:
+        //        UI_Function.cameraCanvas.SetActive(true);
+        //        UI_Function.pauseUI.text = "video 7-8";
+        //        break;
+        //    case 7:
+        //        UI_Function.cameraCanvas.SetActive(true);
+        //        UI_Function.pauseUI.text = "video 8-9";
+        //        break;
+        //    case 8:
+        //        UI_Function.cameraCanvas.SetActive(true);
+        //        UI_Function.pauseUI.text = "video 9-10";
+        //        break;
+        //    case 9:
+        //        UI_Function.cameraCanvas.SetActive(true);
+        //        UI_Function.pauseUI.text = "video 10-";
+        //        break;
+        //}
     }
 
 

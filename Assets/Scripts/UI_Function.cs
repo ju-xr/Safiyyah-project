@@ -28,6 +28,21 @@ public class AudioVideoData
     }
 }
 
+[System.Serializable]
+public class UI_TextList
+{
+    public string Text;
+    public int Time;
+
+    public UI_TextList(string text, int time)
+    {
+        //Video order is fixed
+        Text = text;
+        Time = time;
+    }
+}
+
+
 public class UI_Function : MonoBehaviour
 {
     [Header("Data Collection")]
@@ -64,6 +79,7 @@ public class UI_Function : MonoBehaviour
     public GameObject nextPanel;
 
     [Header("Pause UI")]
+    public List<UI_TextList> amsterdam_UI = new List<UI_TextList>();
     public string[] amsterdamUI;
     public string[] newyorkUI;
 
@@ -78,6 +94,8 @@ public class UI_Function : MonoBehaviour
         {
             dp.interactable = false;
         }
+
+        //amsterdam_UI.Add(new UI_TextList("text", 1));
 
     }
 
@@ -164,7 +182,7 @@ public class UI_Function : MonoBehaviour
         if (!randomOrderToggle.isOn)
         {
             //audioClips is the list to play
-            Debug.Log("dropdown chagne" + currentDropdown.value);
+            //Debug.Log("dropdown chagne" + currentDropdown.value);
             //current dropdown button number
             int i = int.Parse(currentDropdown.tag);
             audioPlayList[i] = backupClips[currentDropdown.value];        

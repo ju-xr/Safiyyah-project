@@ -82,12 +82,12 @@ public class DataCollection : MonoBehaviour
     void WriteParcipantCSV()
     {
         //participantFile = folderpath + "/" + DateTime.UtcNow.ToString("dd-MM-yyyy_hh-mm-ss") + ".csv";
-        participantFile = folderpath + "/" + participantName + "_" + DateTime.UtcNow.ToString("yyyy-MM-dd") + ".csv";
+        participantFile = folderpath + "/" + participantName + "_" + DateTime.UtcNow.ToString("dd-MM-yyyy_hh-mm-ss") + ".csv";
 
         Debug.Log("Write _Data csv file data " + participantFile);
 
-        if (!Directory.Exists(participantFile))
-        {        
+        //if (!Directory.Exists(participantFile))
+        //{        
             //Write titles
             tw = new StreamWriter(participantFile, false);
             tw.WriteLine("Participant(Audio Folder): " + "," + participantName);
@@ -108,7 +108,7 @@ public class DataCollection : MonoBehaviour
             //write data
 
             
-        }
+        //}
     }
 
     void WriteUpdateData()
@@ -124,11 +124,24 @@ public class DataCollection : MonoBehaviour
 
             if (videoPlayer.clip == null || audioSource.clip == null)
             {
-                tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," + DateTime.UtcNow.Millisecond.ToString() + "," + "Not play video" + "," + "Not play audio" + "," + headRotation.rotation.x + "," + headRotation.rotation.y + "," + headRotation.rotation.z + "," + gazeTag);
+                tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," 
+                    + DateTime.UtcNow.Millisecond.ToString() + "," 
+                    + "Not play video" + "," + "Not play audio" + "," 
+                    + headRotation.rotation.x + "," 
+                    + headRotation.rotation.y + "," 
+                    + headRotation.rotation.z + "," 
+                    + gazeTag);
             }
             else
             {
-                tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," + DateTime.UtcNow.Millisecond.ToString() + "," + videoPlayer.clip.name + "," + audioSource.clip.name + "," + headRotation.rotation.x + "," + headRotation.rotation.y + "," + headRotation.rotation.z + "," + gazeTag);
+                tw.WriteLine(DateTime.UtcNow.ToString("HH:mm:ss") + "," 
+                    + DateTime.UtcNow.Millisecond.ToString() + "," 
+                    + videoPlayer.clip.name + "," 
+                    + audioSource.clip.name + "," 
+                    + headRotation.rotation.x + "," 
+                    + headRotation.rotation.y + "," 
+                    + headRotation.rotation.z + "," 
+                    + gazeTag);
 
             }
 
