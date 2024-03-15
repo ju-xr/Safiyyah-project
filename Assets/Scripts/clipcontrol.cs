@@ -34,13 +34,14 @@ public class clipcontrol : MonoBehaviour
 
     public bool lastVideo = false;
     public GameObject[] WPgoGroupList = new GameObject[9];
+    public GameObject[] colliderTags;
 
 
     void Start()
     {
         videoPlayer = GetComponent<VideoPlayer>();
         audioSource = GetComponent<AudioSource>();
-        videoLength = 3;
+        //videoLength = 3;
         //StartCoroutine(PlayVideoSequence()); 
 
         //Load Video to clips
@@ -156,6 +157,12 @@ public class clipcontrol : MonoBehaviour
 
     void MatchVideoAudio()
     {
+        foreach ()
+        {
+            if (currentVideoIndex >= videoLength)
+        }
+
+
         switch (currentVideoIndex)
         {
             case 0:

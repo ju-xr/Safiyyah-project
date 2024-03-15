@@ -5667,7 +5667,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -16508,6 +16508,20 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  colliderTags:
+  - {fileID: 1335680393}
+  - {fileID: 1487095681}
+  - {fileID: 1027411932}
+  - {fileID: 1737134876}
+  - {fileID: 1730612225}
+  - {fileID: 96898221}
+  - {fileID: 1600536806}
+  - {fileID: 1716002109}
+  - {fileID: 701699783}
+  - {fileID: 721217598}
+  - {fileID: 543055494}
+  - {fileID: 655306829}
+  - {fileID: 2091056351}
 --- !u!82 &1726885759
 AudioSource:
   m_ObjectHideFlags: 0
