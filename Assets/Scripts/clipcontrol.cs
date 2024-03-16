@@ -12,49 +12,46 @@ using UnityEngine.PlayerLoop;
 
 public class clipcontrol : MonoBehaviour
 {
-    public UI_Function UI_Function;
-    public DataCollection dataCollection;
+    [Header("Experimentor Edit Parameters")]
+    public int video_PlayTime;
 
     [Header("Video Control")]
-    public string VideoFolderName = "Default";
-    public string VideoPath;
-    [SerializeField] private TMP_InputField VideoFolderName_text;
-    public int videoLength;
-    [SerializeField] private TMP_Text VideoTimeTextBox;
-    private const float videoPlayTime = 30f; // Play each video for 60 seconds
-
-    // Start is called before the first frame update
+    public GameObject[] colliderTags;
     public List<VideoClip> videoClips = new List<VideoClip>();
 
     public VideoPlayer videoPlayer;
     private AudioSource audioSource;
     private int currentVideoIndex = 0;
+    bool startExp;
+    string VideoFolderName;
 
-    private const float restPeriod = 10f; // Rest period of 15 seconds
-
+    [Header("Public Variables")]
+    public UI_Function UI_Function;
+    public DataCollection dataCollection;
     public bool lastVideo = false;
-    public GameObject[] WPgoGroupList = new GameObject[9];
-    public GameObject[] colliderTags;
-
+    public TMP_Dropdown videoFolderDropdown;
 
     void Start()
     {
-        videoPlayer = GetComponent<VideoPlayer>();
+        //videoPlayer = GetComponent<VideoPlayer>();
+        LoadVideo();
         audioSource = GetComponent<AudioSource>();
-        //videoLength = 3;
-        //StartCoroutine(PlayVideoSequence()); 
-
         //Load Video to clips
-        VideoFolderName = VideoFolderName_text.text;
-        VideoPath = Application.dataPath + "/Resources/Videos";
+        videoPlayer.loopPointReached += CheckOver;
+    }
+
+    public void LoadVideo()
+    {
+        videoClips.Clear();
+        VideoFolderName = videoFolderDropdown.captionText.text;
+        //Debug.Log(videoFolderDropdown.captionText.text);
+        //VideoPath = Application.dataPath + "/Resources/Videos";
         var videoClip = Resources.LoadAll("Videos/" + VideoFolderName, typeof(VideoClip));
 
         for (int i = 0; i < videoClip.Length; i++)
         {
             //Debug.Log(videoClip[i].name);
             videoClips.Add((VideoClip)videoClip[i]);
-
-            //audioOrder.Add(new AudioOrder(i + 1, (AudioClip)audioClip[i]));
             //audioNames.text += audioClip[i].name + "\n";
         }
 
@@ -63,10 +60,6 @@ public class clipcontrol : MonoBehaviour
         {
             UI_Function.videoNames.text += videoClips[i].name + "\n";
         }
-
-        //videoClips = videoClips.OrderBy(go => float.Parse(go.name)).ToList();
-        //videoClips = videoClips.OrderBy(go => int.Parse(go.name.Substring(videoClip.Length))).ToArray();
-        videoPlayer.loopPointReached += CheckOver;
     }
 
     void VideoCountDown(int currentSecond)
@@ -88,11 +81,16 @@ public class clipcontrol : MonoBehaviour
 
     void Update()
     {
-        VideoCountDown(videoLength);//videoLength
+        if (startExp)
+        {
+            VideoCountDown(video_PlayTime);//videoLength
+        }
+
     }
 
     public void StartExperiment()
     {
+        startExp = true;
         StartCoroutine(PlayFirstVideo());
     }
 
@@ -131,7 +129,7 @@ public class clipcontrol : MonoBehaviour
         currentVideoIndex++;
         MatchVideoAudio();
         PlayMatchedVA(); // videoPlayer.Play();
-        yield return new WaitForSeconds(videoLength); //videoLength
+        yield return new WaitForSeconds(video_PlayTime); //videoLength
         //UI_Function.currentAudio.text = UI_Function.audioPlayList[currentVideoIndex].name;
 
         //currentVideoOver = false;
@@ -166,42 +164,73 @@ public class clipcontrol : MonoBehaviour
         switch (currentVideoIndex)
         {
             case 0:
+                colliderTags[0].SetActive(true);
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
-                colliderTags[0].SetActive(true);
                 break;
             case 1:
+                colliderTags[1].SetActive(true);
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
                 break;
             case 2:
+                if (VideoFolderName == "New York")
+                {
+                    colliderTags[2].SetActive(true);
+                }
+                else
+                {
+                    colliderTags[3].SetActive(true);
+                }
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
                 break;
             case 3:
+                colliderTags[4].SetActive(true);
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 break;
             case 4:
+                colliderTags[5].SetActive(true);
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 1];
                 break;
             case 5:
+                if (VideoFolderName == "New York")
+                {
+                    colliderTags[6].SetActive(true);
+                }
+                else
+                {
+                    colliderTags[7].SetActive(true);
+                }
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 1];
                 break;
             case 6:
+                colliderTags[8].SetActive(true);
+                colliderTags[9].SetActive(true);
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 1];
                 break;
             case 7:
+                if (VideoFolderName == "New York")
+                {
+                    colliderTags[10].SetActive(true);
+                }
+                else
+                {
+                    colliderTags[11].SetActive(true);
+                }
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 break;
             case 8:
+                colliderTags[12].SetActive(true);
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 2];
                 lastVideo = true;
                 break;
             case 9:
+                colliderTags[13].SetActive(true);
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex - 2];
                 break;

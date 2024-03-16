@@ -51,18 +51,19 @@ public class UI_Function : MonoBehaviour
 
 
     [Header("Audio File")]
-    public string AudioPath;
+    //public string AudioPath;
 
     [Header("Audio and Video External Control")]
     public clipcontrol clipcontrol;
     public TMP_Text currentAudio;
     public GameObject cameraCanvas;
     public TMP_Text pauseUI;
-    public TMP_Dropdown videoFolder;
+    //public TMP_Dropdown videoFolder;
 
     [Header("Read Audios")]
     public List<AudioClip> audioPlayList = new List<AudioClip>();
     public List<AudioClip> backupClips = new List<AudioClip>();
+    public TMP_Dropdown participant_AudioDropdown;
     public Toggle randomOrderToggle;
     //public List<int> order = new List<int>();
 
@@ -95,21 +96,21 @@ public class UI_Function : MonoBehaviour
             dp.interactable = false;
         }
 
-        //amsterdam_UI.Add(new UI_TextList("text", 1));
-
+        LoadAudioBtn();
     }
 
+    public void LoadAudio()
+    {
+        
+    }
 
     public void LoadAudioBtn()
     {
-
-
-        if (AudioFolderName != null)
-        {
-
+        //if (!randomOrderToggle.isOn)
+        //{
             //Find audio Folder, put into audioClip array
-            AudioFolderName = AudioFolderName_text.text;
-            AudioPath = Application.dataPath + "/Resources/Audios";
+            AudioFolderName = participant_AudioDropdown.captionText.text;
+            //AudioPath = Application.dataPath + "/Resources/Audios";
             var audioFile = Resources.LoadAll("Audios/" + AudioFolderName, typeof(AudioClip));
 
             //Clear loaded audio clips and audio names List each button click
@@ -121,12 +122,12 @@ public class UI_Function : MonoBehaviour
 
 
             var optData = new List<Dropdown.OptionData>();
-            
+
             //Loop Audio File in Resources Folder with the ascending order
             for (int i = 0; i < audioFile.Length; i++)
             {
                 //Debug.Log(audioClip[i].name);
-                
+
 
                 //add folder audio into playable audio clips
                 audioPlayList.Add((AudioClip)audioFile[i]);
@@ -135,14 +136,6 @@ public class UI_Function : MonoBehaviour
                 //order.Add(i + 1);                          
 
                 m_DropOptions.Add(audioPlayList[i].name);
-            }
-
-            if (randomOrderToggle.isOn)
-            {
-                //Debug.Log(randomOrderToggle.isOn);
-                UnityEngine.Random.Range(0, audioPlayList.Count - 1);
-                audioPlayList = audioPlayList.OrderBy(x => UnityEngine.Random.value).ToList();
-
             }
 
             //Choose audio function
@@ -157,36 +150,101 @@ public class UI_Function : MonoBehaviour
                 {
                     dp.ClearOptions();
                     dp.interactable = false;
-                }                
-
-                if (randomOrderToggle.isOn)
-                {
-                    audioDropdown[i].interactable = false;
-
                 }
-                else
-                {
-                    audioDropdown[i].interactable = true;              
-                }
+
+                //if (randomOrderToggle.isOn)
+                //{
+                //    audioDropdown[i].interactable = false;
+
+                //}
+                //else
+                //{
+                    audioDropdown[i].interactable = true;
+                //}
                 //audio_OrderOption[i].Select(m_DropOptions[1]);
                 audioDropdown[i].RefreshShownValue();
 
             }
+        #region random function
+        //}
+        //else
+        //{
+        //    AudioFolderName = participant_AudioDropdown.captionText.text;
+        //    //AudioPath = Application.dataPath + "/Resources/Audios";
+        //    var audioFile = Resources.LoadAll("Audios/" + AudioFolderName, typeof(AudioClip));
 
-        }
+        //    //Clear loaded audio clips and audio names List each button click
+        //    //audioNames.text = string.Empty;
+        //    audioPlayList.Clear();
+        //    backupClips.Clear();
+        //    m_DropOptions.Clear();
 
+
+        //    var optData = new List<Dropdown.OptionData>();
+
+        //    //Loop Audio File in Resources Folder with the ascending order
+        //    for (int i = 0; i < audioFile.Length; i++)
+        //    {
+        //        //Debug.Log(audioClip[i].name);
+
+
+        //        //add folder audio into playable audio clips
+        //        audioPlayList.Add((AudioClip)audioFile[i]);
+        //        backupClips.Add((AudioClip)audioFile[i]);
+        //        //audioNames.text += audioClip[i].name + "\n";
+        //        //order.Add(i + 1);                          
+
+        //        m_DropOptions.Add(audioPlayList[i].name);
+        //    }
+
+        //    //Debug.Log(randomOrderToggle.isOn);
+        //    UnityEngine.Random.Range(0, audioPlayList.Count - 1);
+        //    audioPlayList = audioPlayList.OrderBy(x => UnityEngine.Random.value).ToList();
+
+        //    //Choose audio function
+        //    for (int i = 0; i < audioDropdown.Count; i++)
+        //    {
+        //        audioDropdown[i].ClearOptions();
+        //        audioDropdown[i].AddOptions(m_DropOptions);
+
+        //        audioDropdown[i].value = i;
+
+        //        foreach (TMP_Dropdown dp in emptyAudioDropdown)
+        //        {
+        //            dp.ClearOptions();
+        //            dp.interactable = false;
+        //        }
+
+        //        //if (randomOrderToggle.isOn)
+        //        //{
+        //            audioDropdown[i].interactable = false;
+
+        //        //}
+        //        //else
+        //        //{
+        //        //    audioDropdown[i].interactable = true;
+        //        //}
+        //        //audio_OrderOption[i].Select(m_DropOptions[1]);
+        //        audioDropdown[i].RefreshShownValue();
+
+        //    }
+
+
+        //}
+
+        #endregion
     }
 
     public void PressAudioDropdown(TMP_Dropdown currentDropdown)
     {
-        if (!randomOrderToggle.isOn)
-        {
+        //if (!randomOrderToggle.isOn)
+        //{
             //audioClips is the list to play
             //Debug.Log("dropdown chagne" + currentDropdown.value);
             //current dropdown button number
             int i = int.Parse(currentDropdown.tag);
             audioPlayList[i] = backupClips[currentDropdown.value];        
-        }
+        //}
 
 
     }

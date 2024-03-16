@@ -51,25 +51,9 @@ public class DataCollection : MonoBehaviour
     public void StartDataCollection()
     {
         
-        if (UI_Function.AudioFolderName == string.Empty)
-        {
-            participantName = "Default";
-        }
-        else
-        {
-            participantName = UI_Function.AudioFolderName;
+        participantName = UI_Function.participant_AudioDropdown.captionText.text;
+        videoGroup = clipcontrol.videoFolderDropdown.captionText.text;
 
-        }
-
-        if (clipcontrol.VideoFolderName == string.Empty)
-        {
-            videoGroup = "Default";
-        }
-        else
-        {
-            videoGroup = clipcontrol.VideoFolderName;
-
-        }
         // Save setting panel data INTO file .csv when start button pressed 
         folderpath = Application.dataPath + "/" + "ParticipantData" + "/" + participantName;
         Directory.CreateDirectory(folderpath); // returns a DirectoryInfo object
