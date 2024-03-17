@@ -124,7 +124,14 @@ public class clipcontrol : MonoBehaviour
         audioSource.clip = null;
         Camera.main.clearFlags = CameraClearFlags.SolidColor;
         MatchPauseUI(2); //current video index
-        yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex + 2].Time);
+        if (VideoFolderName == "New York")
+        {
+            yield return new WaitForSeconds(UI_Function.newyork_UI[currentVideoIndex + 2].Time);
+        }
+        else
+        {
+            yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex + 2].Time);
+        }
         Camera.main.clearFlags = CameraClearFlags.Skybox;
         UI_Function.cameraCanvas.SetActive(false);
 
@@ -148,9 +155,24 @@ public class clipcontrol : MonoBehaviour
         audioSource.clip = null;
         Camera.main.clearFlags = CameraClearFlags.SolidColor;
         MatchPauseUI(2); //current video index
-        yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex +2].Time);
-        UI_Function.pauseUI.text = UI_Function.amsterdam_UI[currentVideoIndex + 3].Text;
-        yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex + 3].Time);
+        if (VideoFolderName == "New York")
+        {
+            yield return new WaitForSeconds(UI_Function.newyork_UI[currentVideoIndex + 2].Time);
+        }
+        else
+        {
+            yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex + 2].Time);
+        }
+        MatchPauseUI(3);
+        //UI_Function.pauseUI.text = UI_Function.amsterdam_UI[currentVideoIndex + 3].Text;
+        if (VideoFolderName == "New York")
+        {
+            yield return new WaitForSeconds(UI_Function.newyork_UI[currentVideoIndex + 3].Time);
+        }
+        else
+        {
+            yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex + 3].Time);
+        }
         Application.Quit();
 
     }
