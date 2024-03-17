@@ -81,8 +81,7 @@ public class UI_Function : MonoBehaviour
 
     [Header("Pause UI")]
     public List<UI_TextList> amsterdam_UI = new List<UI_TextList>();
-    public string[] amsterdamUI;
-    public string[] newyorkUI;
+    public List<UI_TextList> newyork_UI = new List<UI_TextList>();
 
     //private List<string> fileNamesCSV = new List<string>();
 
@@ -97,11 +96,6 @@ public class UI_Function : MonoBehaviour
         }
 
         LoadAudioBtn();
-    }
-
-    public void LoadAudio()
-    {
-        
     }
 
     public void LoadAudioBtn()

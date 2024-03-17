@@ -99,9 +99,11 @@ public class clipcontrol : MonoBehaviour
         Camera.main.clearFlags = CameraClearFlags.SolidColor;
         UI_Function.cameraCanvas.SetActive(true);
 
-        UI_Function.pauseUI.text = UI_Function.amsterdam_UI[0].Text;
+        MatchPauseUI(0);
+        //UI_Function.pauseUI.text = UI_Function.amsterdam_UI[0].Text;
         yield return new WaitForSeconds(UI_Function.amsterdam_UI[0].Time);
-        UI_Function.pauseUI.text = UI_Function.amsterdam_UI[1].Text;
+        MatchPauseUI(1);
+        //UI_Function.pauseUI.text = UI_Function.amsterdam_UI[1].Text;
         yield return new WaitForSeconds(UI_Function.amsterdam_UI[1].Time);
 
         Camera.main.clearFlags = CameraClearFlags.Skybox;
@@ -121,7 +123,7 @@ public class clipcontrol : MonoBehaviour
         videoPlayer.clip = null;
         audioSource.clip = null;
         Camera.main.clearFlags = CameraClearFlags.SolidColor;
-        MatchPauseUI(); //current video index
+        MatchPauseUI(2); //current video index
         yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex + 2].Time);
         Camera.main.clearFlags = CameraClearFlags.Skybox;
         UI_Function.cameraCanvas.SetActive(false);
@@ -145,7 +147,7 @@ public class clipcontrol : MonoBehaviour
         videoPlayer.clip = null;
         audioSource.clip = null;
         Camera.main.clearFlags = CameraClearFlags.SolidColor;
-        MatchPauseUI(); //current video index
+        MatchPauseUI(2); //current video index
         yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex +2].Time);
         UI_Function.pauseUI.text = UI_Function.amsterdam_UI[currentVideoIndex + 3].Text;
         yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex + 3].Time);
@@ -261,10 +263,18 @@ public class clipcontrol : MonoBehaviour
         }
     }
 
-    void MatchPauseUI()
+    void MatchPauseUI(int i)
     {
         UI_Function.cameraCanvas.SetActive(true);
-        UI_Function.pauseUI.text = UI_Function.newyorkUI[currentVideoIndex + 2];
+        if(VideoFolderName == "New York")
+        {
+            UI_Function.pauseUI.text = UI_Function.newyork_UI[currentVideoIndex + i].Text;
+        }
+        else
+        {
+            UI_Function.pauseUI.text = UI_Function.amsterdam_UI[currentVideoIndex + i].Text;
+        }
+        
 
         //switch (currentVideoIndex)
         //{

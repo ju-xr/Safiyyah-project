@@ -11233,6 +11233,54 @@ MonoBehaviour:
   amsterdam_UI:
   - Text: Welcome to our study. Please wait the study start... (TBC content)
     Time: 2
+  - Text: Today is the beginning of a long-awaited vacation in Amsterdam and you're
+      here a whole day before your friend is due to arrive. You've just checked in
+      with the hotel receptionist and your plan is to make a head start exploring
+      the city on your own! You've got your music, comfortable shoes and a few things
+      you'd really like to see. But first, in your room, you take a look around to
+      get used to your 'home away from home'.
+    Time: 3
+  - Text: "You're excited to get moving. But first you go down to the restaurant
+      to have breakfast. Time to pick somewhere nice to sit\u2026"
+    Time: 15
+  - Text: "What better way to get a feel for the city than walking everywhere? Your
+      first stop is an iconic Amsterdam destination; you arrive and stop to take
+      it all in\u2026"
+    Time: 15
+  - Text: Further on your walk you see that a space is hosting a free event. You
+      decide to pop in to see what it's about.
+    Time: 15
+  - Text: You're getting hungry again and a supermarket has emerged at exactly the
+      right moment. You walk in to get a snack and then decide you might as well
+      pick up a few other things.
+    Time: 15
+  - Text: Feeling energised, you continue strolling around the city. On the recommendation
+      of a friend, you walk through a particularly scenic neighbourhood and stop
+      for a bit after taking photos.
+    Time: 15
+  - Text: On your to-do list is an unusual museum you've heard is really good. You
+      arrive and check out the first of a series of immersive installations.
+    Time: 15
+  - Text: Getting a bit tired, you consult your map to find a spot where you can
+      rest. You make your way up to a pedestrian walkway 30 feet above street level
+      to look around for a bench.
+    Time: 15
+  - Text: You look at the time and realise how late it's gotten. On your way back
+      to the hotel you spot an affordable but nice looking restaurant. You go in
+      and wait to be seated.
+    Time: 15
+  - Text: Back at the hotel, you're reminded that there's a complementary drink for
+      all guests. You go up to the bar and wait to be served the hotel bar specialty.
+    Time: 15
+  - Text: What a day! Your friend arrives bright and early tomorrow morning, so you
+      better get some rest before day 2 of your trip.
+    Time: 15
+  - Text: This portion of the study has now concluded. Please remove your headset
+      and hand it to the experimenter
+    Time: 30
+  newyork_UI:
+  - Text: Welcome to our study. Please wait the study start... (TBC content)
+    Time: 2
   - Text: Today is the beginning of a long-awaited vacation to New York and you're
       here a day before your friend is due to arrive. You've just checked in with
       the hotel receptionist and your plan today is to explore the city on your own.
@@ -11277,68 +11325,6 @@ MonoBehaviour:
   - Text: This portion of the study has now concluded. Please remove your headset
       and hand it to the experimenter
     Time: 30
-  amsterdamUI:
-  - Today is the beginning of a long-awaited vacation to New York and you're here
-    a day before your friend is due to arrive. You've just checked in with the hotel
-    receptionist and your plan today is to explore the city on your own. You've got
-    your music, comfortable shoes and a few things you'd really like to see. But
-    first, in your room, you take a look around to get used to your 'home away from
-    home'.
-  - "You're excited to get moving. But first you go down to the restaurant to have
-    breakfast. Time to pick somewhere nice to sit\u2026"
-  - "What better way to get a feel for the city than walking everywhere? Your first
-    stop is an iconic New York destination; you arrive and stop to take it all in\u2026"
-  - Further on your walk you see that a space is hosting a free event. You decide
-    to pop in to see what it's about.
-  - You're getting hungry again and a supermarket has emerged at exactly the right
-    moment. You walk in to get a snack and then decide you might as well pick up
-    a few other things.
-  - "Feeling energised, you continue strolling around the city. On a recommendation
-    from a friend, you head to a spot you've been told has nice views \u2026"
-  - On your to-do list is an unusual museum you've heard is really good. You arrive
-    and check out the first of a series of immersive installations.
-  - Getting a bit tired, you consult your map to find a spot where you can rest.
-    You make your way up to a pedestrian walkway 30 feet above street level to look
-    around for a bench.
-  - You look at the time and realise how late it's gotten. On your way back to the
-    hotel you spot an affordable but nice looking restaurant. You go in and wait
-    to be seated.
-  - Back at the hotel, you're reminded that there's a complementary drink for all
-    guests. You go up to the bar and wait to be served the hotel bar specialty.
-  - What a day! Your friend arrives bright and early tomorrow morning, so you better
-    get some rest before day 2 of your trip. This portion of the study has now concluded.
-    Please remove your headset and hand it to the experimenter.
-  newyorkUI:
-  - Today is the beginning of a long-awaited vacation to New York and you're here
-    a day before your friend is due to arrive. You've just checked in with the hotel
-    receptionist and your plan today is to explore the city on your own. You've got
-    your music, comfortable shoes and a few things you'd really like to see. But
-    first, in your room, you take a look around to get used to your 'home away from
-    home'.
-  - "You're excited to get moving. But first you go down to the restaurant to have
-    breakfast. Time to pick somewhere nice to sit\u2026"
-  - "What better way to get a feel for the city than walking everywhere? Your first
-    stop is an iconic New York destination; you arrive and stop to take it all in\u2026"
-  - Further on your walk you see that a space is hosting a free event. You decide
-    to pop in to see what it's about.
-  - You're getting hungry again and a supermarket has emerged at exactly the right
-    moment. You walk in to get a snack and then decide you might as well pick up
-    a few other things.
-  - "Feeling energised, you continue strolling around the city. On a recommendation
-    from a friend, you head to a spot you've been told has nice views \u2026"
-  - On your to-do list is an unusual museum you've heard is really good. You arrive
-    and check out the first of a series of immersive installations.
-  - Getting a bit tired, you consult your map to find a spot where you can rest.
-    You make your way up to a pedestrian walkway 30 feet above street level to look
-    around for a bench.
-  - You look at the time and realise how late it's gotten. On your way back to the
-    hotel you spot an affordable but nice looking restaurant. You go in and wait
-    to be seated.
-  - Back at the hotel, you're reminded that there's a complementary drink for all
-    guests. You go up to the bar and wait to be served the hotel bar specialty.
-  - What a day! Your friend arrives bright and early tomorrow morning, so you better
-    get some rest before day 2 of your trip. This portion of the study has now concluded.
-    Please remove your headset and hand it to the experimenter.
 --- !u!1 &1020859748
 GameObject:
   m_ObjectHideFlags: 0
