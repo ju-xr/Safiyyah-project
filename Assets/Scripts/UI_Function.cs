@@ -79,6 +79,7 @@ public class UI_Function : MonoBehaviour
 
     public GameObject nextPanel;
 
+
     [Header("Pause UI")]
     public List<UI_TextList> amsterdam_UI = new List<UI_TextList>();
     public string[] amsterdamUI;
