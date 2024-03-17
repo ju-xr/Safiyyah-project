@@ -7317,8 +7317,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11205,31 +11205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12a627f9c0230af4f93739935e753147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioFolderName: Default
-  clipcontrol: {fileID: 1726885758}
-  currentAudio: {fileID: 710254303}
-  cameraCanvas: {fileID: 517341470}
-  pauseUI: {fileID: 552107853}
-  audioPlayList: []
-  backupClips: []
-  participant_AudioDropdown: {fileID: 1417314529}
-  randomOrderToggle: {fileID: 1514350911}
-  audioNames: {fileID: 345014397}
-  videoNames: {fileID: 657284724}
-  AudioFolderName_text: {fileID: 664849816}
-  audioDropdown:
-  - {fileID: 1108469087}
-  - {fileID: 207168686}
-  - {fileID: 1799318351}
-  - {fileID: 309833906}
-  - {fileID: 1020859750}
-  - {fileID: 199103136}
-  - {fileID: 393231714}
-  - {fileID: 558987971}
-  emptyAudioDropdown:
-  - {fileID: 207530917}
-  - {fileID: 1607838132}
-  nextPanel: {fileID: 1570979761}
   amsterdam_UI:
   - Text: Welcome to our study. Please wait the study start... (TBC content)
     Time: 2
@@ -11325,6 +11300,29 @@ MonoBehaviour:
   - Text: This portion of the study has now concluded. Please remove your headset
       and hand it to the experimenter
     Time: 30
+  clipcontrol: {fileID: 1726885758}
+  currentAudio: {fileID: 710254303}
+  cameraCanvas: {fileID: 517341470}
+  pauseUI: {fileID: 552107853}
+  audioPlayList: []
+  backupClips: []
+  participant_AudioDropdown: {fileID: 1417314529}
+  randomOrderToggle: {fileID: 1514350911}
+  videoNames: {fileID: 657284724}
+  AudioFolderName_text: {fileID: 664849816}
+  audioDropdown:
+  - {fileID: 1108469087}
+  - {fileID: 207168686}
+  - {fileID: 1799318351}
+  - {fileID: 309833906}
+  - {fileID: 1020859750}
+  - {fileID: 199103136}
+  - {fileID: 393231714}
+  - {fileID: 558987971}
+  emptyAudioDropdown:
+  - {fileID: 207530917}
+  - {fileID: 1607838132}
+  nextPanel: {fileID: 1570979761}
 --- !u!1 &1020859748
 GameObject:
   m_ObjectHideFlags: 0

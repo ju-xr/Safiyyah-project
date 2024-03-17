@@ -45,15 +45,15 @@ public class UI_TextList
 
 public class UI_Function : MonoBehaviour
 {
+    [Header("Experimentor Edit UI")]
+    public List<UI_TextList> amsterdam_UI = new List<UI_TextList>();
+    public List<UI_TextList> newyork_UI = new List<UI_TextList>();
+
     [Header("Data Collection")]
     public List<AudioVideoData> experimentData = new List<AudioVideoData>();
-    public string AudioFolderName = "Default"; //Participant Name/Tag
+    string AudioFolderName = "Default"; //Participant Name/Tag
 
-
-    [Header("Audio File")]
-    //public string AudioPath;
-
-    [Header("Audio and Video External Control")]
+    [Header("Public Variables")]
     public clipcontrol clipcontrol;
     public TMP_Text currentAudio;
     public GameObject cameraCanvas;
@@ -68,7 +68,7 @@ public class UI_Function : MonoBehaviour
     //public List<int> order = new List<int>();
 
     [Header("Folder Setting")]
-    public TMP_Text audioNames;
+    //public TMP_Text audioNames;
     public TMP_Text videoNames;
     [SerializeField] private TMP_InputField AudioFolderName_text;
 
@@ -78,10 +78,6 @@ public class UI_Function : MonoBehaviour
     List<string> m_DropOptions = new List<string>();
 
     public GameObject nextPanel;
-
-    [Header("Pause UI")]
-    public List<UI_TextList> amsterdam_UI = new List<UI_TextList>();
-    public List<UI_TextList> newyork_UI = new List<UI_TextList>();
 
     //private List<string> fileNamesCSV = new List<string>();
 
