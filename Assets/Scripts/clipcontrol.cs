@@ -194,6 +194,7 @@ public class clipcontrol : MonoBehaviour
                 break;
             case 1:
                 colliderTags[1].SetActive(true);
+                colliderTags[14].SetActive(true);
                 videoPlayer.clip = videoClips[currentVideoIndex];
                 audioSource.clip = UI_Function.audioPlayList[currentVideoIndex];
                 break;
