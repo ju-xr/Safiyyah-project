@@ -36,6 +36,8 @@ public class clipcontrol : MonoBehaviour
         //videoPlayer = GetComponent<VideoPlayer>();
         LoadVideo();
         audioSource = GetComponent<AudioSource>();
+        Camera.main.clearFlags = CameraClearFlags.SolidColor;
+        UI_Function.cameraCanvas.SetActive(true);
         //Load Video to clips
         videoPlayer.loopPointReached += CheckOver;
     }
@@ -96,8 +98,6 @@ public class clipcontrol : MonoBehaviour
 
     IEnumerator PlayFirstVideo()
     {
-        Camera.main.clearFlags = CameraClearFlags.SolidColor;
-        UI_Function.cameraCanvas.SetActive(true);
 
         MatchPauseUI(0);
         //UI_Function.pauseUI.text = UI_Function.amsterdam_UI[0].Text;

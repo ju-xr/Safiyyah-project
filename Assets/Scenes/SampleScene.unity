@@ -7014,7 +7014,7 @@ GameObject:
   - component: {fileID: 543055496}
   m_Layer: 0
   m_Name: V08 NY
-  m_TagString: Untagged
+  m_TagString: Gaze_NY_6820_V08
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8103,7 +8103,7 @@ GameObject:
   - component: {fileID: 655306831}
   m_Layer: 0
   m_Name: V09
-  m_TagString: Gaze_NY_6815_V06
+  m_TagString: Gaze_3303_V09
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8851,7 +8851,7 @@ GameObject:
   - component: {fileID: 701699785}
   m_Layer: 0
   m_Name: V07
-  m_TagString: Gaze_NY_6815_V06
+  m_TagString: Gaze_0111_V07
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9424,7 +9424,7 @@ GameObject:
   - component: {fileID: 721217600}
   m_Layer: 0
   m_Name: V07 (1)
-  m_TagString: Gaze_NY_6815_V06
+  m_TagString: Gaze_0111_V07
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10490,7 +10490,7 @@ GameObject:
   - component: {fileID: 819463738}
   m_Layer: 0
   m_Name: V08 AMS
-  m_TagString: Untagged
+  m_TagString: Gaze_AMS_0104_V08
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18696,7 +18696,7 @@ GameObject:
   - component: {fileID: 1730612227}
   m_Layer: 0
   m_Name: V04
-  m_TagString: Gaze_2002_V04
+  m_TagString: Gaze_5301_V05
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18801,7 +18801,7 @@ GameObject:
   - component: {fileID: 1737134878}
   m_Layer: 0
   m_Name: V03_AMS
-  m_TagString: Gaze_NY_6817_1_V03
+  m_TagString: Gaze_AMS_0102_V03
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21787,7 +21787,7 @@ GameObject:
   - component: {fileID: 2091056353}
   m_Layer: 0
   m_Name: V10
-  m_TagString: Gaze_NY_6815_V06
+  m_TagString: Gaze_3301_V10
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
