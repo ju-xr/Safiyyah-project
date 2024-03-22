@@ -6509,7 +6509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &517341471
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7259,7 +7259,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552107851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.785}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7267,8 +7267,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.4931, y: -18.9567}
-  m_SizeDelta: {x: 909.0366, y: 735.6862}
+  m_AnchoredPosition: {x: 35.178, y: -147.087}
+  m_SizeDelta: {x: 999.026, y: 1656.921}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &552107853
 MonoBehaviour:
@@ -7290,7 +7290,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Welcome to our study. Please wait the study start... (TBC content)
+  m_text: Please wait, the study will begin soon. Music should begin playing, so
+    please take this time to adjust the volume to a comfortable level and keep from
+    changing the volume during the experience. Let the experimenter know once your
+    volume is set.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7317,15 +7320,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 46
+  m_fontSizeBase: 46
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -11207,15 +11210,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amsterdam_UI:
-  - Text: Welcome to our study. Please wait the study start... (TBC content)
-    Time: 2
+  - Text: In this study you will be immersed in several 360-degree videos. To get
+      used to this kind of environment, have a look around the following photo. Feel
+      free to look in any direction.
+    Time: 10
   - Text: Today is the beginning of a long-awaited vacation in Amsterdam and you're
       here a whole day before your friend is due to arrive. You've just checked in
       with the hotel receptionist and your plan is to make a head start exploring
       the city on your own! You've got your music, comfortable shoes and a few things
       you'd really like to see. But first, in your room, you take a look around to
       get used to your 'home away from home'.
-    Time: 3
+    Time: 5
   - Text: "You're excited to get moving. But first you go down to the restaurant
       to have breakfast. Time to pick somewhere nice to sit\u2026"
     Time: 15
@@ -11255,15 +11260,17 @@ MonoBehaviour:
       and hand it to the experimenter
     Time: 30
   newyork_UI:
-  - Text: Welcome to our study. Please wait the study start... (TBC content)
-    Time: 2
+  - Text: In this study you will be immersed in several 360-degree videos. To get
+      used to this kind of environment, have a look around the following photo. Feel
+      free to look in any direction.
+    Time: 10
   - Text: Today is the beginning of a long-awaited vacation to New York and you're
       here a day before your friend is due to arrive. You've just checked in with
       the hotel receptionist and your plan today is to explore the city on your own.
       You've got your music, comfortable shoes and a few things you'd really like
       to see. But first, in your room, you take a look around to get used to your
       'home away from home'.
-    Time: 3
+    Time: 5
   - Text: "You're excited to get moving. But first you go down to the restaurant
       to have breakfast. Time to pick somewhere nice to sit\u2026"
     Time: 15
@@ -16475,7 +16482,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600536806}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -18695,6 +18702,10 @@ MonoBehaviour:
   dataCollection: {fileID: 814545710}
   lastVideo: 0
   videoFolderDropdown: {fileID: 462169095}
+  skyMat: {fileID: 2100000, guid: 2f80c1af4847e2c4f802a33090652083, type: 2}
+  skybox: {fileID: 8400000, guid: 181631b876f52e34a80902db1d6e5231, type: 2}
+  black: {fileID: 8400000, guid: f7137fd9d5829ee448b14d99e2881ba6, type: 2}
+  picture: {fileID: 2800000, guid: 94f5250d191212143a68ccf2d2ef325a, type: 3}
 --- !u!82 &1726885759
 AudioSource:
   m_ObjectHideFlags: 0

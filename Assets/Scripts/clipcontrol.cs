@@ -30,13 +30,18 @@ public class clipcontrol : MonoBehaviour
     public DataCollection dataCollection;
     public bool lastVideo = false;
     public TMP_Dropdown videoFolderDropdown;
+    public Material skyMat;
+    public RenderTexture skybox;
+    public RenderTexture black;
+    public Texture2D picture;
 
     void Start()
     {
         //videoPlayer = GetComponent<VideoPlayer>();
         LoadVideo();
         audioSource = GetComponent<AudioSource>();
-        Camera.main.clearFlags = CameraClearFlags.SolidColor;
+        videoPlayer.targetTexture = black;
+        //Camera.main.clearFlags = CameraClearFlags.SolidColor;
         UI_Function.cameraCanvas.SetActive(true);
         //Load Video to clips
         videoPlayer.loopPointReached += CheckOver;
@@ -102,11 +107,16 @@ public class clipcontrol : MonoBehaviour
         MatchPauseUI(0);
         //UI_Function.pauseUI.text = UI_Function.amsterdam_UI[0].Text;
         yield return new WaitForSeconds(UI_Function.amsterdam_UI[0].Time);
+        UI_Function.cameraCanvas.SetActive(false);
+        skyMat.SetTexture("_MainTex", picture);
+        //videoPlayer.targetTexture = picture;
+        yield return new WaitForSeconds(30);
+        UI_Function.cameraCanvas.SetActive(true);
         MatchPauseUI(1);
         //UI_Function.pauseUI.text = UI_Function.amsterdam_UI[1].Text;
         yield return new WaitForSeconds(UI_Function.amsterdam_UI[1].Time);
-
-        Camera.main.clearFlags = CameraClearFlags.Skybox;
+        videoPlayer.targetTexture = skybox;
+        //amera.main.clearFlags = CameraClearFlags.Skybox;
         UI_Function.cameraCanvas.SetActive(false);
 
         dataCollection.StartDataCollection();
@@ -122,7 +132,9 @@ public class clipcontrol : MonoBehaviour
         audioSource.Stop();
         videoPlayer.clip = null;
         audioSource.clip = null;
-        Camera.main.clearFlags = CameraClearFlags.SolidColor;
+        //skyMat.SetTexture("_MainTex", black);
+        videoPlayer.targetTexture = black;
+        //Camera.main.clearFlags = CameraClearFlags.SolidColor;
         MatchPauseUI(2); //current video index
         if (VideoFolderName == "New York")
         {
@@ -132,11 +144,12 @@ public class clipcontrol : MonoBehaviour
         {
             yield return new WaitForSeconds(UI_Function.amsterdam_UI[currentVideoIndex + 2].Time);
         }
-        Camera.main.clearFlags = CameraClearFlags.Skybox;
-        UI_Function.cameraCanvas.SetActive(false);
-
         currentVideoIndex++;
         MatchVideoAudio();
+        //Camera.main.clearFlags = CameraClearFlags.Skybox;
+        UI_Function.cameraCanvas.SetActive(false);
+
+
         PlayMatchedVA(); // videoPlayer.Play();
         yield return new WaitForSeconds(video_PlayTime); //videoLength
         //UI_Function.currentAudio.text = UI_Function.audioPlayList[currentVideoIndex].name;
@@ -153,7 +166,8 @@ public class clipcontrol : MonoBehaviour
         audioSource.Stop();
         videoPlayer.clip = null;
         audioSource.clip = null;
-        Camera.main.clearFlags = CameraClearFlags.SolidColor;
+        videoPlayer.targetTexture = black;
+        //Camera.main.clearFlags = CameraClearFlags.SolidColor;
         MatchPauseUI(2); //current video index
         if (VideoFolderName == "New York")
         {
@@ -264,6 +278,8 @@ public class clipcontrol : MonoBehaviour
 
     void PlayMatchedVA()
     {
+        skyMat.SetTexture("_MainTex", skybox);
+        videoPlayer.targetTexture = skybox;
         switch (currentVideoIndex)
         {
             case 3:
@@ -297,8 +313,8 @@ public class clipcontrol : MonoBehaviour
         {
             UI_Function.pauseUI.text = UI_Function.amsterdam_UI[currentVideoIndex + i].Text;
         }
-        
 
+        #region cases
         //switch (currentVideoIndex)
         //{
         //    case 0:
@@ -343,6 +359,7 @@ public class clipcontrol : MonoBehaviour
         //        UI_Function.pauseUI.text = "video 10-";
         //        break;
         //}
+        #endregion
     }
 
 
@@ -363,18 +380,6 @@ public class clipcontrol : MonoBehaviour
         //StartCoroutine(PlayNextVideo());
     }
 
-    //void PlayVideoClip(int index)
-    //{
-    //    if (index >= 0 && index < videoClips.Count)
-    //    {
-    //        videoPlayer.clip = videoClips[index];
-    //        //audioSource.clip = audioClips.Length > index ? audioClips[index] : null;
-    //        audioSource.clip = audioClips[index];
-    //        videoPlayer.Play();
-    //        if (audioSource.clip != null) audioSource.Play();
-    //    }
-    //}
-
     public void StopVideo()
     {
         videoPlayer.Stop();
@@ -382,12 +387,4 @@ public class clipcontrol : MonoBehaviour
         currentVideoIndex = (currentVideoIndex + 1) % videoClips.Count;
     }
 
-    //public void PlayNextVideo()
-    //{
-    //    StopCoroutine("PlayVideoSequence");
-    //    StopVideo();
-    //    StartCoroutine(PlayVideoSequence());
-    //}
-
-    // Update is called once per frame
 }

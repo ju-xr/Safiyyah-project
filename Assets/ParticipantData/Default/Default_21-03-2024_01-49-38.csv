@@ -1,0 +1,1124 @@
+Participant(Audio Folder): ,Default
+Video Folder:,New York
+Audio Order
+A01_exp_1,
+A02_exp_2,
+A03_xp_3,
+A04_exp_4,
+A05_ppt_1,
+A06_ppt_2,
+A07_ppt_3,
+A08_ppt_4,
+Time,Millisecond,VideoClip,AudioClip,Headrotatin X,Headrotatin Y,Headrotatin Y,GazeObject
+13:49:39,162,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,162,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,162,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,162,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,162,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,162,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,162,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,162,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,162,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,176,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,196,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,207,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,226,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,245,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,266,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,287,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,304,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,328,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,351,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,368,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,383,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,405,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,423,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,445,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,464,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,487,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,506,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,525,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,548,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,563,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,585,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,607,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,624,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,646,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,668,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,683,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,705,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,724,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,746,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,768,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,784,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,805,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,823,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,846,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,868,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,885,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,902,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,928,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,953,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,968,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:39,985,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,3,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,22,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,51,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,67,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,82,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,105,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,128,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,149,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,168,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,183,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,204,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,227,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,251,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,268,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,284,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,303,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,329,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,355,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,374,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,390,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,406,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,425,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,450,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,466,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,483,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,505,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,527,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,549,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,566,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,588,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,603,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,626,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,652,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,667,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,684,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,706,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,727,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,752,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,773,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,789,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,805,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,826,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,850,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,866,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,882,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,904,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,926,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,952,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,968,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:40,983,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,7,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,28,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,51,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,69,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,83,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,105,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,128,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,151,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,169,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,185,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,203,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,228,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,251,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,268,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,284,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,308,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,327,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,350,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,367,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,383,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,402,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,427,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,451,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,466,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,489,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,505,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,526,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,552,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,567,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,584,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,602,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,623,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,654,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,669,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,687,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,704,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,724,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,751,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,767,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,784,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,802,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,828,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,853,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,869,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,887,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,902,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,928,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,952,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,968,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:41,984,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,3,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,29,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,43,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,66,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,82,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,103,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,125,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,145,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,165,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,193,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,208,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,227,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,251,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,268,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,282,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,303,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,322,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,343,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,362,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,382,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,409,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,428,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,454,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,469,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,487,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,502,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,528,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,553,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,569,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,585,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,602,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,622,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,651,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,668,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,685,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,708,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,726,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,742,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,763,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,783,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,808,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,827,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,852,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,868,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,885,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,903,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,928,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,954,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,970,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:42,986,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,2,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,25,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,44,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,63,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,91,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,107,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,127,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,153,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,169,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,186,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,203,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,226,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,251,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,268,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,283,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,308,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,326,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,352,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,368,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,386,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,403,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,426,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,451,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,466,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,490,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,505,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,526,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,545,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,563,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,592,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,606,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,627,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,652,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,668,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,684,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,704,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,725,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,744,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,772,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,789,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,804,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,825,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,844,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,864,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,891,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,907,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,927,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,949,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,962,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:43,991,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,8,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,27,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,45,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,65,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,91,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,106,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,127,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,152,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,163,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,195,V01_3308_TMP,A01_exp_1,0,0,0,Gaze_3308_V01
+13:49:44,207,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,228,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,245,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,272,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,283,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,303,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,325,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,342,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,362,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,384,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,406,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,425,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,443,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,462,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,485,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,502,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,523,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,545,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,564,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,582,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,605,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,622,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,645,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,664,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,684,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,702,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,726,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,745,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,765,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,785,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,803,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,824,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,845,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,870,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,883,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,904,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,922,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,942,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,962,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:44,984,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,5,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,25,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,42,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,63,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,86,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,102,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,122,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,143,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,164,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,182,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,203,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,224,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,244,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,266,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,285,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,306,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,322,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,342,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,366,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,385,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,405,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,424,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,443,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,466,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,486,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,506,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,525,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,543,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,562,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,586,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,605,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,623,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,646,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,662,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,688,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,706,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,723,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,743,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,765,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,784,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,803,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,824,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,845,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,866,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,883,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,904,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,925,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,945,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,965,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:45,986,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,3,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,24,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,45,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,65,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,86,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,103,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,124,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,145,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,166,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,186,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,202,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,223,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,245,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,265,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,282,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,302,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,323,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,344,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,373,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,386,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,402,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,424,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,445,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,462,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,484,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,504,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,524,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,542,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,562,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,585,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,605,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,626,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,642,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,665,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,683,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,703,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,725,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,743,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,764,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,784,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,804,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,825,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,845,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,866,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,883,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,904,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,922,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,943,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,965,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:46,986,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,3,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,24,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,46,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,63,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,85,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,103,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,127,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,144,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,165,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,186,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,204,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,223,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,244,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,264,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,282,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,303,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,322,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,345,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,366,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,382,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,403,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,423,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,444,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,464,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,485,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,504,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,522,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,543,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,564,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,582,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,603,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,625,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,646,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,667,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,683,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,703,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,725,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,744,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,765,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,784,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,802,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,822,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,844,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,867,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,883,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,904,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,922,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,944,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,964,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:47,983,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,4,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,26,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,44,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,62,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,84,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,104,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,127,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,143,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,165,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,185,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,201,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,223,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,244,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,264,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,285,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,302,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,327,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,342,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,363,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,385,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,403,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,422,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,445,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,462,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,484,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,506,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,526,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,543,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,564,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,586,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,606,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,623,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,644,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,665,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,686,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,702,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,724,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,742,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,762,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,784,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,802,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,823,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,842,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,864,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,885,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,902,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,922,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,944,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,964,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:48,985,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,4,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,23,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,44,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,63,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,86,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,102,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,124,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,145,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,163,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,184,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,204,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,225,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,244,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,266,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,282,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,303,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,322,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,343,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,365,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,384,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,403,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,423,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,447,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,465,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,482,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,503,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,525,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,543,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,565,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,583,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,604,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,625,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,643,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,664,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,685,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,702,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,722,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,745,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,762,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,786,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,804,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,825,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,842,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,866,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,884,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,903,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,922,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,945,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,963,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:49,985,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,3,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,25,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,41,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,63,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,85,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,104,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,127,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,142,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,165,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,185,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,206,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,222,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,244,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,264,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,285,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,304,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,324,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,346,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,362,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,381,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,406,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,422,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,442,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,466,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,485,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,502,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,526,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,542,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,564,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,584,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,604,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,624,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,646,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,663,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,686,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,703,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,723,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,745,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,766,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,785,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,805,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,827,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,844,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,865,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,885,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,906,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,926,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,945,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,963,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:50,983,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,4,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,27,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,42,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,62,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,84,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,105,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,125,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,145,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,165,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,184,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,205,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,224,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,246,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,262,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,283,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,304,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,328,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,343,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,363,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,384,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,404,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,424,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,442,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,465,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,482,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,502,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,523,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,543,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,565,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,584,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,604,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,625,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,646,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,667,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,684,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,704,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,725,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,742,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,764,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,784,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,805,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,825,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,847,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,863,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,883,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,904,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,926,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,945,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,963,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:51,984,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,5,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,26,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,43,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,64,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,84,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,102,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,122,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,143,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,166,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,183,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,203,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,223,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,244,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,265,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,284,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,305,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,327,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,344,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,364,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,384,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,404,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,425,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,445,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,464,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,483,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,505,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,527,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,544,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,565,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,582,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,603,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,622,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,643,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,665,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,684,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,705,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,722,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,742,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,764,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,786,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,803,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,823,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,844,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,866,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,882,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,902,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,922,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,943,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,964,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:52,984,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,5,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,24,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,47,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,63,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,82,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,102,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,124,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,145,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,165,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,183,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,203,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,223,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,244,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,266,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,282,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,302,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,323,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,343,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,364,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,383,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,403,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,425,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,445,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,467,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,483,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,503,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,523,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,544,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,565,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,585,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,602,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,622,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,643,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,664,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,684,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,705,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,721,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,743,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,765,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,786,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,804,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,824,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,844,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,862,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,882,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,904,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,925,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,946,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,962,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:53,983,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,3,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,26,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,46,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,62,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,82,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,102,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,127,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,143,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,164,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,182,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,206,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,222,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,243,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,264,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,285,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,306,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,321,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,343,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,363,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,383,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,405,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,425,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,446,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,462,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,483,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,503,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,524,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,546,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,563,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,582,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,603,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,623,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,644,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,665,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,682,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,702,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,723,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,744,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,765,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,782,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,806,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,822,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,842,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,863,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,885,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,905,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,925,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,946,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,963,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:54,982,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,3,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,23,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,44,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,66,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,86,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,102,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,123,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,143,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,166,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,185,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,202,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,222,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,241,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,265,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,284,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,306,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,322,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,343,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,364,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,385,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,405,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,425,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,442,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,463,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,483,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,506,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,524,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,547,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,565,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,584,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,604,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,625,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,643,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,665,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,682,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,703,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,723,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,744,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,765,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,785,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,802,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,822,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,845,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,865,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,884,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,903,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,923,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,944,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,965,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:55,985,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,2,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,22,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,44,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,64,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,85,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,103,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,124,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,145,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,165,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,186,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,205,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,222,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,243,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,264,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,286,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,302,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,323,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,343,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,364,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,384,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,406,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,422,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,443,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,463,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,484,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,505,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,524,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,545,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,562,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,585,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,603,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,623,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,644,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,664,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,684,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,705,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,726,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,742,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,764,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,785,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,803,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,822,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,843,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,864,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,884,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,906,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,922,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,942,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,963,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:56,984,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,6,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,22,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,42,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,65,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,85,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,103,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,123,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,144,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,165,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,183,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,203,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,223,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,243,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,263,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,284,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,312,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,327,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,346,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,363,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,385,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,403,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,425,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,446,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,464,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,482,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,502,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,523,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,544,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,563,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,585,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,604,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,628,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,643,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,665,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,682,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,705,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,723,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,742,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,765,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,784,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,805,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,824,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,846,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,866,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,884,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,904,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,924,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,946,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,963,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:57,985,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,5,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,24,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,42,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,63,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,85,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,103,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,123,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,145,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,165,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,185,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,205,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,225,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,246,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,263,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,286,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,302,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,327,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,343,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,365,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,385,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,406,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,422,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,443,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,464,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,483,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,507,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,524,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,544,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,565,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,583,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,602,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,623,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,643,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,663,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,685,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,705,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,722,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,742,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,763,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,785,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,803,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,825,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,843,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,865,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,882,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,904,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,926,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,943,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,964,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:58,985,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,5,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,23,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,45,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,62,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,82,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,102,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,124,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,144,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,164,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,184,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,205,Not play video,Not play audio,0,0,0,Gaze_3308_V01
+13:49:59,371,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,371,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,371,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,371,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,371,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,371,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,371,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,371,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,387,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,411,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,424,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,449,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,464,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,482,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,507,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,522,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,548,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,562,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,585,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,605,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,623,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,649,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,664,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,683,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,704,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,730,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,747,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,763,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,786,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,803,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,826,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,843,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,866,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,887,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,905,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,929,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,947,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,963,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:49:59,984,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,3,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,26,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,45,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,63,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,87,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,103,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,130,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,147,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,162,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,185,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,203,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,224,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,249,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,263,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,283,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,304,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,325,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,349,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,363,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,385,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,403,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,424,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,442,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,462,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,485,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,504,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,526,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,548,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,566,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,587,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,605,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,622,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,648,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,665,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,685,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,703,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,723,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,749,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,765,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,785,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,803,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,825,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,849,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,869,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,885,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,904,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,926,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,948,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,967,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:00,987,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,5,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,22,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,48,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,65,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,87,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,105,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,131,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,149,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,165,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,186,V02_0303,A02_exp_2,0,0,0,Not Look At
+13:50:01,203,V02_0303,A02_exp_2,0,0,0,Not Look At
