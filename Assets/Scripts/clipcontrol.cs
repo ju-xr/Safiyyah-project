@@ -109,11 +109,13 @@ public class clipcontrol : MonoBehaviour
         MatchPauseUI(0);
         //UI_Function.pauseUI.text = UI_Function.amsterdam_UI[0].Text;
         yield return new WaitForSeconds(UI_Function.amsterdam_UI[0].Time);
-        UI_Function.cameraCanvas.SetActive(false);
+        //skyMat.SetTexture("_MainTex", black);
+        //UI_Function.cameraCanvas.SetActive(false);
         skyMat.SetTexture("_MainTex", picture);
         //videoPlayer.targetTexture = picture;
         yield return new WaitForSeconds(UI_Function.photoTime_UI);
-        UI_Function.cameraCanvas.SetActive(true);
+        skyMat.SetTexture("_MainTex", black);
+        //UI_Function.cameraCanvas.SetActive(true);
         MatchPauseUI(1);
         //UI_Function.pauseUI.text = UI_Function.amsterdam_UI[1].Text;
         yield return new WaitForSeconds(UI_Function.amsterdam_UI[1].Time);
