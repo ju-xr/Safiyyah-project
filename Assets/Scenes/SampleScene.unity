@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.54753256, g: 0.5277967, b: 0.5225244, a: 1}
+  m_IndirectSpecularColor: {r: 0.5471142, g: 0.5268478, b: 0.52147824, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11209,19 +11209,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12a627f9c0230af4f93739935e753147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  photoTime_UI: 5
+  photoTime_UI: 30
   amsterdam_UI:
   - Text: In this study you will be immersed in several 360-degree videos. To get
       used to this kind of environment, have a look around the following photo. Feel
       free to look in any direction.
-    Time: 10
+    Time: 15
   - Text: Today is the beginning of a long-awaited vacation in Amsterdam and you're
       here a whole day before your friend is due to arrive. You've just checked in
       with the hotel receptionist and your plan is to make a head start exploring
       the city on your own! You've got your music, comfortable shoes and a few things
       you'd really like to see. But first, in your room, you take a look around to
       get used to your 'home away from home'.
-    Time: 5
+    Time: 15
   - Text: "You're excited to get moving. But first you go down to the restaurant
       to have breakfast. Time to pick somewhere nice to sit\u2026"
     Time: 15
@@ -11259,19 +11259,19 @@ MonoBehaviour:
     Time: 15
   - Text: This portion of the study has now concluded. Please remove your headset
       and hand it to the experimenter
-    Time: 30
+    Time: 60
   newyork_UI:
   - Text: In this study you will be immersed in several 360-degree videos. To get
       used to this kind of environment, have a look around the following photo. Feel
       free to look in any direction.
-    Time: 10
+    Time: 15
   - Text: Today is the beginning of a long-awaited vacation to New York and you're
       here a day before your friend is due to arrive. You've just checked in with
       the hotel receptionist and your plan today is to explore the city on your own.
       You've got your music, comfortable shoes and a few things you'd really like
       to see. But first, in your room, you take a look around to get used to your
       'home away from home'.
-    Time: 5
+    Time: 15
   - Text: "You're excited to get moving. But first you go down to the restaurant
       to have breakfast. Time to pick somewhere nice to sit\u2026"
     Time: 15
@@ -11308,7 +11308,7 @@ MonoBehaviour:
     Time: 15
   - Text: This portion of the study has now concluded. Please remove your headset
       and hand it to the experimenter
-    Time: 30
+    Time: 60
   clipcontrol: {fileID: 1726885758}
   currentAudio: {fileID: 710254303}
   cameraCanvas: {fileID: 517341470}
@@ -18680,7 +18680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c433f9a300862eb43bec3850b7f0cb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video_PlayTime: 5
+  video_PlayTime: 60
   colliderTags:
   - {fileID: 1335680393}
   - {fileID: 1487095681}
@@ -18697,6 +18697,51 @@ MonoBehaviour:
   - {fileID: 655306829}
   - {fileID: 2091056351}
   - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
+  - {fileID: 1346094857}
   videoClips: []
   videoPlayer: {fileID: 1726885756}
   UI_Function: {fileID: 1015996822}
@@ -18706,7 +18751,7 @@ MonoBehaviour:
   skyMat: {fileID: 2100000, guid: 2f80c1af4847e2c4f802a33090652083, type: 2}
   skybox: {fileID: 8400000, guid: 181631b876f52e34a80902db1d6e5231, type: 2}
   black: {fileID: 8400000, guid: f7137fd9d5829ee448b14d99e2881ba6, type: 2}
-  picture: {fileID: 2800000, guid: 94f5250d191212143a68ccf2d2ef325a, type: 3}
+  picture: {fileID: 2800000, guid: 69e1aefc5f104c344bf26a15a0cfc0df, type: 3}
 --- !u!82 &1726885759
 AudioSource:
   m_ObjectHideFlags: 0
