@@ -11209,6 +11209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12a627f9c0230af4f93739935e753147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photoTime_UI: 5
   amsterdam_UI:
   - Text: In this study you will be immersed in several 360-degree videos. To get
       used to this kind of environment, have a look around the following photo. Feel
@@ -18679,7 +18680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c433f9a300862eb43bec3850b7f0cb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstTextTime: 3
   video_PlayTime: 5
   colliderTags:
   - {fileID: 1335680393}

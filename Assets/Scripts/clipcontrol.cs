@@ -41,7 +41,8 @@ public class clipcontrol : MonoBehaviour
         //videoPlayer = GetComponent<VideoPlayer>();
         LoadVideo();
         audioSource = GetComponent<AudioSource>();
-        videoPlayer.targetTexture = black;
+        //videoPlayer.targetTexture = black;
+        skyMat.SetTexture("_MainTex", black);
         //Camera.main.clearFlags = CameraClearFlags.SolidColor;
         UI_Function.cameraCanvas.SetActive(true);
         //Load Video to clips
@@ -111,12 +112,13 @@ public class clipcontrol : MonoBehaviour
         UI_Function.cameraCanvas.SetActive(false);
         skyMat.SetTexture("_MainTex", picture);
         //videoPlayer.targetTexture = picture;
-        yield return new WaitForSeconds(UI_Function.firstTime_UI);
+        yield return new WaitForSeconds(UI_Function.photoTime_UI);
         UI_Function.cameraCanvas.SetActive(true);
         MatchPauseUI(1);
         //UI_Function.pauseUI.text = UI_Function.amsterdam_UI[1].Text;
         yield return new WaitForSeconds(UI_Function.amsterdam_UI[1].Time);
-        videoPlayer.targetTexture = skybox;
+        skyMat.SetTexture("_MainTex", skybox);
+        //videoPlayer.targetTexture = skybox;
         //amera.main.clearFlags = CameraClearFlags.Skybox;
         UI_Function.cameraCanvas.SetActive(false);
 
@@ -133,7 +135,7 @@ public class clipcontrol : MonoBehaviour
         audioSource.Stop();
         videoPlayer.clip = null;
         audioSource.clip = null;
-        //skyMat.SetTexture("_MainTex", black);
+        skyMat.SetTexture("_MainTex", black);
         videoPlayer.targetTexture = black;
         //Camera.main.clearFlags = CameraClearFlags.SolidColor;
         MatchPauseUI(2); //current video index
@@ -148,6 +150,8 @@ public class clipcontrol : MonoBehaviour
         currentVideoIndex++;
         MatchVideoAudio();
         //Camera.main.clearFlags = CameraClearFlags.Skybox;
+        videoPlayer.targetTexture = skybox;
+        skyMat.SetTexture("_MainTex", skybox);
         UI_Function.cameraCanvas.SetActive(false);
 
 
@@ -167,7 +171,8 @@ public class clipcontrol : MonoBehaviour
         audioSource.Stop();
         videoPlayer.clip = null;
         audioSource.clip = null;
-        videoPlayer.targetTexture = black;
+        skyMat.SetTexture("_MainTex", black);
+        //videoPlayer.targetTexture = black;
         //Camera.main.clearFlags = CameraClearFlags.SolidColor;
         MatchPauseUI(2); //current video index
         if (VideoFolderName == "New York")
@@ -280,7 +285,7 @@ public class clipcontrol : MonoBehaviour
     void PlayMatchedVA()
     {
         skyMat.SetTexture("_MainTex", skybox);
-        videoPlayer.targetTexture = skybox;
+        //videoPlayer.targetTexture = skybox;
         switch (currentVideoIndex)
         {
             case 3:
