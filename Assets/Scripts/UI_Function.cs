@@ -46,6 +46,7 @@ public class UI_TextList
 public class UI_Function : MonoBehaviour
 {
     [Header("Experimentor Edit UI")]
+    public int firstTime_UI;
     public List<UI_TextList> amsterdam_UI = new List<UI_TextList>();
     public List<UI_TextList> newyork_UI = new List<UI_TextList>();
 

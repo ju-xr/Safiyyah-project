@@ -35,6 +35,7 @@ public class clipcontrol : MonoBehaviour
     public RenderTexture black;
     public Texture2D picture;
 
+
     void Start()
     {
         //videoPlayer = GetComponent<VideoPlayer>();
@@ -110,7 +111,7 @@ public class clipcontrol : MonoBehaviour
         UI_Function.cameraCanvas.SetActive(false);
         skyMat.SetTexture("_MainTex", picture);
         //videoPlayer.targetTexture = picture;
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(UI_Function.firstTime_UI);
         UI_Function.cameraCanvas.SetActive(true);
         MatchPauseUI(1);
         //UI_Function.pauseUI.text = UI_Function.amsterdam_UI[1].Text;
