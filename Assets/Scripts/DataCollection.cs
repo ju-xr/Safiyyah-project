@@ -82,7 +82,7 @@ public class DataCollection : MonoBehaviour
                 //UI_Function.audioNames.text += UI_Function.audioPlayList[i].name + "\n";
                 tw.WriteLine(UI_Function.audioPlayList[i].name + ",");
             }
-            tw.WriteLine("Time" + "," + "Millisecond" + "," + "VideoClip" + "," + "AudioClip" + "," + "Headrotatin X" + "," + "Headrotatin Y" + "," + "Headrotatin Z" + "," + "GazeObject");
+            tw.WriteLine("Time" + "," + "Millisecond" + "," + "VideoClip" + "," + "AudioClip" + "," + "Headrotation X" + "," + "Headrotation Y" + "," + "Headrotation Z" + "," + "GazeObject");
 
             tw.Close(); 
 

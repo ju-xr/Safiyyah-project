@@ -8369,8 +8369,8 @@ Transform:
   - {fileID: 96898222}
   - {fileID: 1600536807}
   - {fileID: 1716002110}
-  - {fileID: 701699784}
   - {fileID: 721217599}
+  - {fileID: 701699784}
   - {fileID: 543055495}
   - {fileID: 819463737}
   - {fileID: 655306830}
@@ -11221,7 +11221,7 @@ MonoBehaviour:
       the city on your own! You've got your music, comfortable shoes and a few things
       you'd really like to see. But first, in your room, you take a look around to
       get used to your 'home away from home'.
-    Time: 15
+    Time: 30
   - Text: "You're excited to get moving. But first you go down to the restaurant
       to have breakfast. Time to pick somewhere nice to sit\u2026"
     Time: 15
@@ -11271,7 +11271,7 @@ MonoBehaviour:
       You've got your music, comfortable shoes and a few things you'd really like
       to see. But first, in your room, you take a look around to get used to your
       'home away from home'.
-    Time: 15
+    Time: 30
   - Text: "You're excited to get moving. But first you go down to the restaurant
       to have breakfast. Time to pick somewhere nice to sit\u2026"
     Time: 15
