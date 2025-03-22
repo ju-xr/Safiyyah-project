@@ -49,6 +49,7 @@ public class UI_Function : MonoBehaviour
     public int photoTime_UI;
     public List<UI_TextList> amsterdam_UI = new List<UI_TextList>();
     public List<UI_TextList> newyork_UI = new List<UI_TextList>();
+    public List<UI_TextList> germany_UI = new List<UI_TextList>();
 
     [Header("Data Collection")]
     public List<AudioVideoData> experimentData = new List<AudioVideoData>();
