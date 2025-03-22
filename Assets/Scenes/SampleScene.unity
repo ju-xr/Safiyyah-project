@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5471142, g: 0.5268478, b: 0.52147824, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11309,6 +11309,53 @@ MonoBehaviour:
   - Text: This portion of the study has now concluded. Please remove your headset
       and hand it to the experimenter
     Time: 60
+  germany_UI:
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
+  - Text: 
+    Time: 0
   clipcontrol: {fileID: 1726885758}
   currentAudio: {fileID: 710254303}
   cameraCanvas: {fileID: 517341470}
