@@ -12899,6 +12899,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701918876}
   m_CullTransparentMesh: 1
+--- !u!1 &702610336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 702610337}
+  - component: {fileID: 702610338}
+  m_Layer: 0
+  m_Name: LslController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &702610337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702610336}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.656475, y: 16.989977, z: 52.865383}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &702610338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702610336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecaab745bd4ac94a8cd2640f427b839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &703132566
 GameObject:
   m_ObjectHideFlags: 0
@@ -15048,21 +15092,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 814545709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17602f02da574764391bed5d1974d37b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0af9d56846978af4eb678c48ae5ddbc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UI_Function: {fileID: 1015996822}
   clipcontrol: {fileID: 1726885758}
-  folderpath: 
-  startCollect: 0
-  participantFile: 
-  participantName: 
-  videoGroup: 
   videoPlayer: {fileID: 1726885756}
   audioSource: {fileID: 1726885759}
-  headRotation: {fileID: 1385857381}
-  range: 100
-  gazeTag: 
+  headRotation: {fileID: 0}
 --- !u!4 &814545711
 Transform:
   m_ObjectHideFlags: 0
@@ -17148,191 +17185,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1015996817}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12a627f9c0230af4f93739935e753147, type: 3}
+  m_Script: {fileID: 11500000, guid: 916e74b2caec35e4ab21c68db9335857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  photoTime_UI: 30
-  amsterdam_UI:
-  - Text: In this study you will be immersed in several 360-degree videos. To get
-      used to this kind of environment, have a look around the following photo. Feel
-      free to look in any direction.
-    Time: 15
-  - Text: Today is the beginning of a long-awaited vacation in Amsterdam and you're
-      here a whole day before your friend is due to arrive. You've just checked in
-      with the hotel receptionist and your plan is to make a head start exploring
-      the city on your own! You've got your music, comfortable shoes and a few things
-      you'd really like to see. But first, in your room, you take a look around to
-      get used to your 'home away from home'.
-    Time: 30
-  - Text: "You're excited to get moving. But first you go down to the restaurant
-      to have breakfast. Time to pick somewhere nice to sit\u2026"
-    Time: 15
-  - Text: "What better way to get a feel for the city than walking everywhere? Your
-      first stop is an iconic Amsterdam destination; you arrive and stop to take
-      it all in\u2026"
-    Time: 15
-  - Text: Further on your walk you see that a space is hosting a free event. You
-      decide to pop in to see what it's about.
-    Time: 15
-  - Text: You're getting hungry again and a supermarket has emerged at exactly the
-      right moment. You walk in to get a snack and then decide you might as well
-      pick up a few other things.
-    Time: 15
-  - Text: Feeling energised, you continue strolling around the city. On the recommendation
-      of a friend, you walk through a particularly scenic neighbourhood and stop
-      for a bit after taking photos.
-    Time: 15
-  - Text: On your to-do list is an unusual museum you've heard is really good. You
-      arrive and check out the first of a series of immersive installations.
-    Time: 15
-  - Text: Getting a bit tired, you consult your map to find a spot where you can
-      rest. You make your way up to a pedestrian walkway 30 feet above street level
-      to look around for a bench.
-    Time: 15
-  - Text: You look at the time and realise how late it's gotten. On your way back
-      to the hotel you spot an affordable but nice looking restaurant. You go in
-      and wait to be seated.
-    Time: 15
-  - Text: Back at the hotel, you're reminded that there's a complementary drink for
-      all guests. You go up to the bar and wait to be served the hotel bar specialty.
-    Time: 15
-  - Text: What a day! Your friend arrives bright and early tomorrow morning, so you
-      better get some rest before day 2 of your trip.
-    Time: 15
-  - Text: This portion of the study has now concluded. Please remove your headset
-      and hand it to the experimenter
-    Time: 60
-  newyork_UI:
-  - Text: In this study you will be immersed in several 360-degree videos. To get
-      used to this kind of environment, have a look around the following photo. Feel
-      free to look in any direction.
-    Time: 15
-  - Text: Today is the beginning of a long-awaited vacation to New York and you're
-      here a day before your friend is due to arrive. You've just checked in with
-      the hotel receptionist and your plan today is to explore the city on your own.
-      You've got your music, comfortable shoes and a few things you'd really like
-      to see. But first, in your room, you take a look around to get used to your
-      'home away from home'.
-    Time: 30
-  - Text: "You're excited to get moving. But first you go down to the restaurant
-      to have breakfast. Time to pick somewhere nice to sit\u2026"
-    Time: 15
-  - Text: "What better way to get a feel for the city than walking everywhere? Your
-      first stop is an iconic New York destination; you arrive and stop to take it
-      all in\u2026"
-    Time: 15
-  - Text: Further on your walk you see that a space is hosting a free event. You
-      decide to pop in to see what it's about.
-    Time: 15
-  - Text: You're getting hungry again and a supermarket has emerged at exactly the
-      right moment. You walk in to get a snack and then decide you might as well
-      pick up a few other things.
-    Time: 15
-  - Text: "Feeling energised, you continue strolling around the city. On a recommendation
-      from a friend, you head to a spot you've been told has nice views \u2026"
-    Time: 15
-  - Text: On your to-do list is an unusual museum you've heard is really good. You
-      arrive and check out the first of a series of immersive installations.
-    Time: 15
-  - Text: Getting a bit tired, you consult your map to find a spot where you can
-      rest. You make your way up to a pedestrian walkway 30 feet above street level
-      to look around for a bench.
-    Time: 15
-  - Text: You look at the time and realise how late it's gotten. On your way back
-      to the hotel you spot an affordable but nice looking restaurant. You go in
-      and wait to be seated.
-    Time: 15
-  - Text: Back at the hotel, you're reminded that there's a complementary drink for
-      all guests. You go up to the bar and wait to be served the hotel bar specialty.
-    Time: 15
-  - Text: What a day! Your friend arrives bright and early tomorrow morning, so you
-      better get some rest before day 2 of your trip.
-    Time: 15
-  - Text: This portion of the study has now concluded. Please remove your headset
-      and hand it to the experimenter
-    Time: 60
-  germany_UI:
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  - Text: 
-    Time: 0
-  AudioFolderName: Default
+  photoTime_UI: 0
+  germany_UI: []
+  experimentData: []
   clipcontrol: {fileID: 1726885758}
-  currentAudio: {fileID: 710254303}
-  cameraCanvas: {fileID: 517341470}
-  pauseUI: {fileID: 552107853}
+  currentAudio: {fileID: 0}
+  cameraCanvas: {fileID: 0}
+  pauseUI: {fileID: 0}
   audioPlayList: []
   backupClips: []
-  participant_AudioDropdown: {fileID: 1417314529}
-  randomOrderToggle: {fileID: 1514350911}
-  videoNames: {fileID: 657284724}
-  AudioFolderName_text: {fileID: 664849816}
-  audioDropdown:
-  - {fileID: 1108469087}
-  - {fileID: 207168686}
-  - {fileID: 1799318351}
-  - {fileID: 309833906}
-  - {fileID: 1020859750}
-  - {fileID: 199103136}
-  - {fileID: 393231714}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  - {fileID: 558987971}
-  emptyAudioDropdown: []
-  m_DropOptions: []
-  nextPanel: {fileID: 1570979761}
+  participant_AudioDropdown: {fileID: 0}
+  videoNames: {fileID: 0}
+  AudioFolderName_text: {fileID: 0}
 --- !u!1 &1020673493
 GameObject:
   m_ObjectHideFlags: 0
@@ -27160,85 +27027,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1726885755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c433f9a300862eb43bec3850b7f0cb49, type: 3}
+  m_Script: {fileID: 11500000, guid: c56346318190f8c4fb60a9aefdb51337, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video_PlayTime: 60
-  colliderTags:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   videoClips: []
-  videoPlayer: {fileID: 1726885756}
-  audioSource: {fileID: 0}
-  currentVideoIndex: 0
-  startExp: 0
-  VideoFolderName: 
-  UI_Function: {fileID: 1015996822}
-  dataCollection: {fileID: 814545710}
-  lastVideo: 0
-  videoFolderDropdown: {fileID: 462169095}
-  skyMat: {fileID: 2100000, guid: 2f80c1af4847e2c4f802a33090652083, type: 2}
-  skybox: {fileID: 8400000, guid: 181631b876f52e34a80902db1d6e5231, type: 2}
-  black: {fileID: 8400000, guid: f7137fd9d5829ee448b14d99e2881ba6, type: 2}
-  picture: {fileID: 2800000, guid: 69e1aefc5f104c344bf26a15a0cfc0df, type: 3}
+  videoPlayer: {fileID: 0}
+  video_PlayTime: 60
+  UI_Function: {fileID: 0}
+  dataCollection: {fileID: 0}
+  skyMat: {fileID: 0}
+  skybox: {fileID: 0}
+  black: {fileID: 0}
+  picture: {fileID: 0}
 --- !u!82 &1726885759
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32723,3 +32523,4 @@ SceneRoots:
   - {fileID: 78524812}
   - {fileID: 1318200576}
   - {fileID: 814545711}
+  - {fileID: 702610337}

@@ -22,6 +22,9 @@ public class Germany_clipcontrol : MonoBehaviour
     public RenderTexture black;
     public Texture2D picture;
 
+    public GameObject lslController_Obj;
+    private lslController _lslController;
+
     void Start()
     {
         LoadVideo();
@@ -29,6 +32,10 @@ public class Germany_clipcontrol : MonoBehaviour
         skyMat.SetTexture("_MainTex", black);
         UI_Function.cameraCanvas.SetActive(true);
         videoPlayer.loopPointReached += CheckOver;
+
+        _lslController = lslController_Obj.GetComponent<lslController>();
+        _lslController.SendTestTrig("Session Start");
+        print("LSL sent at start");
     }
 
     public void LoadVideo()
@@ -122,7 +129,9 @@ public class Germany_clipcontrol : MonoBehaviour
 
         // TODO: 在这里添加LSL信号发送代码
         // SendLSLSignal(videoPlayer.clip.name + "_start");
-        
+        _lslController.SendTestTrig(videoPlayer.clip.name + "_start");
+        print("LSL sent start");
+
         PlayMatchedVA();
         yield return new WaitForSeconds(video_PlayTime);
     }
@@ -131,7 +140,10 @@ public class Germany_clipcontrol : MonoBehaviour
     {
         // TODO: 在这里添加LSL信号发送代码
         // SendLSLSignal(videoPlayer.clip.name + "_end");
-        
+        //lsl testing
+        _lslController.SendTestTrig(videoPlayer.clip.name + "_end");
+        print("LSL sent ending");
+
         videoPlayer.Stop();
         audioSource.Stop();
         videoPlayer.clip = null;
