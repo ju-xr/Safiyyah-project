@@ -15099,7 +15099,7 @@ MonoBehaviour:
   clipcontrol: {fileID: 1726885758}
   videoPlayer: {fileID: 1726885756}
   audioSource: {fileID: 1726885759}
-  headRotation: {fileID: 0}
+  headRotation: {fileID: 1385857381}
 --- !u!4 &814545711
 Transform:
   m_ObjectHideFlags: 0
@@ -17197,9 +17197,9 @@ MonoBehaviour:
   pauseUI: {fileID: 0}
   audioPlayList: []
   backupClips: []
-  participant_AudioDropdown: {fileID: 0}
-  videoNames: {fileID: 0}
-  AudioFolderName_text: {fileID: 0}
+  participant_AudioDropdown: {fileID: 1417314529}
+  videoNames: {fileID: 657284724}
+  AudioFolderName_text: {fileID: 664849816}
 --- !u!1 &1020673493
 GameObject:
   m_ObjectHideFlags: 0
@@ -27030,15 +27030,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56346318190f8c4fb60a9aefdb51337, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoClips: []
-  videoPlayer: {fileID: 0}
+  videoClips:
+  - {fileID: 32900000, guid: 5df552ec302fbed4d944700d61876a07, type: 3}
+  - {fileID: 32900000, guid: 56c3a68cb1e691947b337b12b91f5e07, type: 3}
+  - {fileID: 32900000, guid: ac7f2da423b6a374a8f89761cfa6ca4d, type: 3}
+  - {fileID: 32900000, guid: c07b4ee14de0d34489825d0ad871fac1, type: 3}
+  - {fileID: 32900000, guid: f7435cd3530322b469d104d43c4a3e81, type: 3}
+  - {fileID: 32900000, guid: 4ea455bc81aa68e42af0d4cac669d203, type: 3}
+  - {fileID: 32900000, guid: aa91b0a849bc21249befe8498a6a1510, type: 3}
+  - {fileID: 32900000, guid: a9f281f6ee9845a4d992cc4fe90d8602, type: 3}
+  - {fileID: 32900000, guid: 43edd7e85a3abd14bb1a95b4af68d0a0, type: 3}
+  - {fileID: 32900000, guid: 381bc7a08fea891499a4acee09e69d73, type: 3}
+  - {fileID: 32900000, guid: 3f0ac0440cae0624496e515a9253cd96, type: 3}
+  - {fileID: 32900000, guid: 22ffee7ef1fe9d44891937eb9c753255, type: 3}
+  - {fileID: 32900000, guid: b8877578773afd44cbd81152b582c420, type: 3}
+  - {fileID: 32900000, guid: 648374f6706219c4c870336dc539e207, type: 3}
+  - {fileID: 32900000, guid: 3ef34baf9c7a7ee499070742512de6f8, type: 3}
+  - {fileID: 32900000, guid: d1762ee2848ff7d40be1bea63165b628, type: 3}
+  - {fileID: 32900000, guid: 8f10ea180a3f03540aeb147de715f37f, type: 3}
+  - {fileID: 32900000, guid: d06a9e22dba880448b8c452c6059861e, type: 3}
+  - {fileID: 32900000, guid: b8909b5d4b5b92448b4dd3ba1ba34a1c, type: 3}
+  - {fileID: 32900000, guid: fc860d82b670a9244b922bcbe44c256d, type: 3}
+  videoPlayer: {fileID: 1726885756}
   video_PlayTime: 60
-  UI_Function: {fileID: 0}
-  dataCollection: {fileID: 0}
-  skyMat: {fileID: 0}
-  skybox: {fileID: 0}
-  black: {fileID: 0}
+  UI_Function: {fileID: 1015996822}
+  dataCollection: {fileID: 814545710}
+  skyMat: {fileID: 2100000, guid: 2f80c1af4847e2c4f802a33090652083, type: 2}
+  skybox: {fileID: 8400000, guid: 181631b876f52e34a80902db1d6e5231, type: 2}
+  black: {fileID: 8400000, guid: f7137fd9d5829ee448b14d99e2881ba6, type: 2}
   picture: {fileID: 0}
+  lslController_Obj: {fileID: 702610336}
 --- !u!82 &1726885759
 AudioSource:
   m_ObjectHideFlags: 0

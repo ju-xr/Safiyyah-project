@@ -30,7 +30,7 @@ public class Germany_clipcontrol : MonoBehaviour
         LoadVideo();
         audioSource = GetComponent<AudioSource>();
         skyMat.SetTexture("_MainTex", black);
-        UI_Function.cameraCanvas.SetActive(true);
+        //UI_Function.cameraCanvas.SetActive(true);
         videoPlayer.loopPointReached += CheckOver;
 
         _lslController = lslController_Obj.GetComponent<lslController>();
