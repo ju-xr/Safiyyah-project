@@ -25,6 +25,9 @@ public class ExperimentControl : MonoBehaviour
     private AudioLoader audioLoader;
     [SerializeField]
     private VideoLoader videoLoader;
+    [SerializeField]
+    public GameObject lslController_Obj;
+    private lslController _lslController;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +39,11 @@ public class ExperimentControl : MonoBehaviour
         videoPlayer.targetTexture = renderLoader.black;
 
         videoPlayer.loopPointReached += CheckOver;
+
+
+        _lslController = lslController_Obj.GetComponent<lslController>();
+        _lslController.SendTestTrig("Session Start");
+        print("LSL sent at start");
 
     }
 
@@ -92,6 +100,9 @@ public class ExperimentControl : MonoBehaviour
         audioSource.clip = audioLoader.audioPlayList[currentVideoIndex];
         videoPlayer.Play();
         audioSource.Play();
+        _lslController.SendTestTrig("Video" + currentVideoIndex + "_start");
+        print("LSL sent Video " + currentVideoIndex + "_start");
+
     }
 
     void ResetVideoSession()
@@ -108,6 +119,10 @@ public class ExperimentControl : MonoBehaviour
     private void CheckOver(VideoPlayer vp)
     {
         print("Video" + currentVideoIndex + " Is Over");
+
+        _lslController.SendTestTrig("Video" + currentVideoIndex + "_end");
+        print("LSL sent Video " + currentVideoIndex + "_end");
+
         currentVideoIndex++;
 
         if (currentVideoIndex < videoLoader.videoClips.Count)

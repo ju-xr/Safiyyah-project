@@ -14403,13 +14403,13 @@ MonoBehaviour:
     so please take this time to adjust the volume to a comfortable level and keep
     from changing the volume during the experience. Let the experimenter know once
     your volume is set.
-  Time_intro: 60
+  Time_intro: 3
   Text_introPhoto: In this study you will be immersed in several 360-degree videos.
     To get used to this kind of environment, have a look around the following photo.
     Feel free to look in any direction.
   Time_introPhoto: 15
   intro_Picture_3307: {fileID: 2800000, guid: 69e1aefc5f104c344bf26a15a0cfc0df, type: 3}
-  Time_intro_Picture_3307: 60
+  Time_intro_Picture_3307: 30
   TextTime_session:
   - Text: Today is the beginning of a long-awaited vacation in Germany and you're
       here a couple days before your friend is due to arrive. You've just checked
@@ -14491,7 +14491,7 @@ MonoBehaviour:
   Text_over: This portion of the study has now concluded. Please remove your headset
     and hand it to the experimenter.
   Time_over: 60
-  testMode: 1
+  testMode: 0
 --- !u!1 &873114276
 GameObject:
   m_ObjectHideFlags: 0
