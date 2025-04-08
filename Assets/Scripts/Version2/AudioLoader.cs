@@ -9,7 +9,7 @@ using UnityEditor;
 
 public class AudioLoader : MonoBehaviour
 {
-    string AudioFolderName = "Default"; //Participant Name/Tag
+    //string AudioFolderName = "Default"; //Participant Name/Tag
 
     [Header("Auto Read Audios")]
     public List<AudioClip> audioPlayList = new List<AudioClip>();

@@ -13874,6 +13874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814545711}
   - component: {fileID: 814545710}
+  - component: {fileID: 814545712}
   m_Layer: 0
   m_Name: Data Collection
   m_TagString: Untagged
@@ -13888,7 +13889,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814545709}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0af9d56846978af4eb678c48ae5ddbc0, type: 3}
   m_Name: 
@@ -13906,13 +13907,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814545709}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 357.36658, y: 57.094795, z: 27.730774}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1726885757}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &814545712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814545709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d855d614f8faa469e844e9876fbf02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textTimeContainer: {fileID: 860377404}
+  renderLoader: {fileID: 1562442617}
+  audioLoader: {fileID: 994240567}
+  videoLoader: {fileID: 1363590549}
+  audioSource: {fileID: 1726885759}
+  videoPlayer: {fileID: 1726885756}
+  headRotation: {fileID: 1385857381}
 --- !u!1 &817447354
 GameObject:
   m_ObjectHideFlags: 0
@@ -14383,13 +14403,13 @@ MonoBehaviour:
     so please take this time to adjust the volume to a comfortable level and keep
     from changing the volume during the experience. Let the experimenter know once
     your volume is set.
-  Time_intro: 3
+  Time_intro: 60
   Text_introPhoto: In this study you will be immersed in several 360-degree videos.
     To get used to this kind of environment, have a look around the following photo.
     Feel free to look in any direction.
-  Time_introPhoto: 3
+  Time_introPhoto: 15
   intro_Picture_3307: {fileID: 2800000, guid: 69e1aefc5f104c344bf26a15a0cfc0df, type: 3}
-  Time_intro_Picture_3307: 3
+  Time_intro_Picture_3307: 60
   TextTime_session:
   - Text: Today is the beginning of a long-awaited vacation in Germany and you're
       here a couple days before your friend is due to arrive. You've just checked
@@ -14397,7 +14417,7 @@ MonoBehaviour:
       on your own! You've got your music, comfortable shoes and a few things you'd
       really like to see. But first, in your room, you take a look around to get
       used to your 'home away from home'
-    Time: 3
+    Time: 30
   - Text: You're excited to get moving. But first you go down to the restaurant to
       have breakfast. Time to pick somewhere nice to sit.
     Time: 15
@@ -14471,6 +14491,7 @@ MonoBehaviour:
   Text_over: This portion of the study has now concluded. Please remove your headset
     and hand it to the experimenter.
   Time_over: 60
+  testMode: 1
 --- !u!1 &873114276
 GameObject:
   m_ObjectHideFlags: 0
@@ -25743,6 +25764,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 814545712}
+        m_TargetAssemblyTypeName: SaveDataFile, Assembly-CSharp
+        m_MethodName: StartDataCollection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1673176307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26897,6 +26930,7 @@ Transform:
   - {fileID: 1562442616}
   - {fileID: 702610337}
   - {fileID: 994240566}
+  - {fileID: 814545711}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1726885758
@@ -32755,5 +32789,4 @@ SceneRoots:
   - {fileID: 1015996821}
   - {fileID: 78524812}
   - {fileID: 1318200576}
-  - {fileID: 814545711}
   - {fileID: 1726885757}

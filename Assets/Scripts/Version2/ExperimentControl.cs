@@ -16,7 +16,7 @@ public class ExperimentControl : MonoBehaviour
     protected AudioSource audioSource;  // 音频源组件
     int currentVideoIndex = 0;
 
-    [Header("Assigned Components")]
+    [Header("Scripts Components")]
     [SerializeField] 
     private TextTime textTimeContainer;
     [SerializeField] 
@@ -74,8 +74,10 @@ public class ExperimentControl : MonoBehaviour
         // 👇 插入中场休息逻辑（仅在 index == 10 时触发）
         if (currentVideoIndex == 10)
         {
+            print("break");
             cameraText.text = textTimeContainer.Text_break;
             yield return new WaitForSeconds(textTimeContainer.Time_break);
+            cameraText.text = null;
         }
 
         var textInfo = textTimeContainer.TextTime_session[currentVideoIndex].Text;
@@ -90,10 +92,6 @@ public class ExperimentControl : MonoBehaviour
         audioSource.clip = audioLoader.audioPlayList[currentVideoIndex];
         videoPlayer.Play();
         audioSource.Play();
-
-        cameraText.text = textTimeContainer.Text_break;
-        yield return new WaitForSeconds(textTimeContainer.Time_break); // 15
-
     }
 
     void ResetVideoSession()
@@ -104,11 +102,12 @@ public class ExperimentControl : MonoBehaviour
         audioSource.clip = null;
         renderLoader.skyMat.SetTexture("_MainTex", renderLoader.black);
         videoPlayer.targetTexture = renderLoader.black;
+        cameraText.text = null;
     }
 
     private void CheckOver(VideoPlayer vp)
     {
-        print("Video Is Over");
+        print("Video" + currentVideoIndex + " Is Over");
         currentVideoIndex++;
 
         if (currentVideoIndex < videoLoader.videoClips.Count)

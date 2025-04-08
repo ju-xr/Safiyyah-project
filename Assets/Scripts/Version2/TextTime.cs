@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -39,5 +39,40 @@ public class TextTime : MonoBehaviour
     public int Time_endsession;
     public string Text_over;
     public int Time_over;
+
+    public bool testMode = false;
+
+    void Start()
+    {
+        if (testMode)
+        {
+            SetTestMode();
+        }
+
+        // 其他初始化...
+    }
+
+    public void SetTestMode()
+    {
+        // Intro
+        Time_intro = 1;
+        Time_introPhoto = 1;
+        Time_intro_Picture_3307 = 1;
+
+        // Video session list
+        foreach (var item in TextTime_session)
+        {
+            item.Time = 1;
+        }
+
+        // Break
+        Time_break = 1;
+
+        // End
+        Time_endsession = 1;
+        Time_over = 1;
+
+        Debug.Log("🧪 Test Mode Activated: All times set to 1 second.");
+    }
 
 }
