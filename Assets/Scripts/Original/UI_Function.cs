@@ -77,7 +77,7 @@ public class UI_Function : MonoBehaviour
     [Header("10 Choose audio Dropdown")]
     public List<TMP_Dropdown> audioDropdown = new List<TMP_Dropdown>();
     [SerializeField] private TMP_Dropdown[] emptyAudioDropdown;
-    List<string> m_DropOptions = new List<string>();
+    protected List<string> m_DropOptions = new List<string>();
 
     public GameObject nextPanel;
 
@@ -96,7 +96,10 @@ public class UI_Function : MonoBehaviour
         LoadAudioBtn();
     }
 
-    public void LoadAudioBtn()
+    /// <summary>
+    /// 加载音频文件
+    /// </summary>
+    public virtual void LoadAudioBtn()
     {
         //if (!randomOrderToggle.isOn)
         //{
@@ -227,7 +230,10 @@ public class UI_Function : MonoBehaviour
         #endregion
     }
 
-    public void PressAudioDropdown(TMP_Dropdown currentDropdown)
+    /// <summary>
+    /// 处理音频下拉菜单选择
+    /// </summary>
+    public virtual void PressAudioDropdown(TMP_Dropdown currentDropdown)
     {
         //if (!randomOrderToggle.isOn)
         //{
@@ -241,7 +247,10 @@ public class UI_Function : MonoBehaviour
 
     }
 
-    public void StartExperiment()
+    /// <summary>
+    /// 开始实验
+    /// </summary>
+    public virtual void StartExperiment()
     {
         clipcontrol.StartExperiment();
 
