@@ -71,6 +71,13 @@ public class ExperimentControl : MonoBehaviour
         print("Next Video");
         ResetVideoSession();
 
+        // 👇 插入中场休息逻辑（仅在 index == 10 时触发）
+        if (currentVideoIndex == 10)
+        {
+            cameraText.text = textTimeContainer.Text_break;
+            yield return new WaitForSeconds(textTimeContainer.Time_break);
+        }
+
         var textInfo = textTimeContainer.TextTime_session[currentVideoIndex].Text;
         cameraText.text = textInfo;
         yield return new WaitForSeconds(textTimeContainer.TextTime_session[currentVideoIndex].Time);
@@ -83,6 +90,9 @@ public class ExperimentControl : MonoBehaviour
         audioSource.clip = audioLoader.audioPlayList[currentVideoIndex];
         videoPlayer.Play();
         audioSource.Play();
+
+        cameraText.text = textTimeContainer.Text_break;
+        yield return new WaitForSeconds(textTimeContainer.Time_break); // 15
 
     }
 
