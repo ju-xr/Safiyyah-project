@@ -27069,6 +27069,7 @@ MonoBehaviour:
   renderLoader: {fileID: 1562442617}
   audioLoader: {fileID: 994240567}
   videoLoader: {fileID: 1363590549}
+  lslController_Obj: {fileID: 702610336}
 --- !u!1 &1741029407
 GameObject:
   m_ObjectHideFlags: 0
